@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function generateStaticParams() {
   return properties.flatMap((p) =>
-    ["nl", "en"].map((locale) => ({ locale, slug: p.slug }))
+    ["nl", "en", "es", "it"].map((locale) => ({ locale, slug: p.slug }))
   );
 }
 
@@ -30,7 +30,9 @@ export function generateMetadata({
       canonical: `/${params.locale}/properties/${property.slug}`,
       languages: {
         nl: `/nl/properties/${property.slug}`,
-        en: `/en/properties/${property.slug}`
+        en: `/en/properties/${property.slug}`,
+        es: `/es/properties/${property.slug}`,
+        it: `/it/properties/${property.slug}`
       }
     },
     openGraph: {

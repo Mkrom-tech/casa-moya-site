@@ -122,9 +122,7 @@ export default function InquiryForm({
         {dict.form.submit}
       </button>
       {status === "error" && (
-        <p className="text-sm text-red-600">
-          Er ging iets mis, probeer het later opnieuw of mail ons direct.
-        </p>
+        <p className="text-sm text-red-600">{dict.form.error}</p>
       )}
       <p className="text-xs text-charcoal/50">{dict.form.note}</p>
     </form>

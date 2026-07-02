@@ -4,7 +4,7 @@ import { properties } from "@/lib/properties";
 const BASE_URL = "https://www.casa-moya.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const locales = ["nl", "en"] as const;
+  const locales = ["nl", "en", "es", "it"] as const;
 
   const homeEntries: MetadataRoute.Sitemap = locales.map((locale) => ({
     url: `${BASE_URL}/${locale}`,

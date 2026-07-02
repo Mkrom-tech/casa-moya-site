@@ -9,6 +9,8 @@ interface BusyRange {
   end: string;
 }
 
+const MONTHS_TO_SHOW = 6;
+
 const MONTH_NAMES: Record<Locale, string[]> = {
   nl: [
     "januari", "februari", "maart", "april", "mei", "juni",
@@ -17,12 +19,22 @@ const MONTH_NAMES: Record<Locale, string[]> = {
   en: [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
+  ],
+  es: [
+    "enero", "febrero", "marzo", "abril", "mayo", "junio",
+    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+  ],
+  it: [
+    "gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno",
+    "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"
   ]
 };
 
 const WEEKDAYS: Record<Locale, string[]> = {
   nl: ["ma", "di", "wo", "do", "vr", "za", "zo"],
-  en: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  en: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  es: ["lu", "ma", "mi", "ju", "vi", "sá", "do"],
+  it: ["lu", "ma", "me", "gi", "ve", "sa", "do"]
 };
 
 function toDateOnly(d: Date) {
@@ -65,8 +77,8 @@ function MonthGrid({
         {MONTH_NAMES[locale][month]} {year}
       </p>
       <div className="grid grid-cols-7 gap-1 text-center text-xs text-charcoal/50">
-        {WEEKDAYS[locale].map((w) => (
-          <div key={w}>{w}</div>
+        {WEEKDAYS[locale].map((w, i) => (
+          <div key={i}>{w}</div>
         ))}
       </div>
       <div className="mt-1 grid grid-cols-7 gap-1">
@@ -124,6 +136,10 @@ export default function AvailabilityCalendar({
   }, [slug]);
 
   const now = new Date();
+  const months = Array.from({ length: MONTHS_TO_SHOW }, (_, i) => {
+    const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+    return { year: d.getFullYear(), month: d.getMonth() };
+  });
 
   return (
     <div className="rounded-xl border border-charcoal/10 bg-white p-5">
@@ -132,51 +148,38 @@ export default function AvailabilityCalendar({
       </h3>
 
       {state.status === "loading" && (
-        <p className="text-sm text-charcoal/60">
-          {locale === "nl" ? "Beschikbaarheid laden…" : "Loading availability…"}
-        </p>
+        <p className="text-sm text-charcoal/60">{dict.property.loadingAvailability}</p>
       )}
 
       {state.status === "not-connected" && (
-        <p className="text-sm text-charcoal/70">
-          {locale === "nl"
-            ? "Koppel hier de Airbnb- en Booking.com-kalender (iCal) zodat gasten altijd de actuele beschikbaarheid zien en dubbele boekingen onmogelijk zijn."
-            : "Connect the Airbnb and Booking.com calendars (iCal) here so guests always see live availability and double bookings are impossible."}
-        </p>
+        <p className="text-sm text-charcoal/70">{dict.property.notConnected}</p>
       )}
 
       {state.status === "error" && (
-        <p className="text-sm text-charcoal/70">
-          {locale === "nl"
-            ? "Kon de kalender nu niet laden. Probeer het later opnieuw."
-            : "Couldn't load the calendar right now. Please try again later."}
-        </p>
+        <p className="text-sm text-charcoal/70">{dict.property.calendarError}</p>
       )}
 
       {state.status === "ready" && (
         <>
-          <div className="grid gap-6 sm:grid-cols-2">
-            <MonthGrid
-              year={now.getFullYear()}
-              month={now.getMonth()}
-              busy={state.busy}
-              locale={locale}
-            />
-            <MonthGrid
-              year={now.getMonth() === 11 ? now.getFullYear() + 1 : now.getFullYear()}
-              month={(now.getMonth() + 1) % 12}
-              busy={state.busy}
-              locale={locale}
-            />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {months.map(({ year, month }) => (
+              <MonthGrid
+                key={`${year}-${month}`}
+                year={year}
+                month={month}
+                busy={state.busy}
+                locale={locale}
+              />
+            ))}
           </div>
           <div className="mt-4 flex gap-4 text-xs text-charcoal/60">
             <span className="flex items-center gap-1">
               <span className="h-3 w-3 rounded bg-terracotta/10" />
-              {locale === "nl" ? "Beschikbaar" : "Available"}
+              {dict.property.available}
             </span>
             <span className="flex items-center gap-1">
               <span className="h-3 w-3 rounded bg-charcoal/10" />
-              {locale === "nl" ? "Bezet" : "Booked"}
+              {dict.property.booked}
             </span>
           </div>
         </>
