@@ -7,9 +7,10 @@ import Script from "next/script";
 // content="..." value) into the NEXT_PUBLIC_GSC_VERIFICATION env var in Vercel.
 const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
-// Google Analytics 4: paste your Measurement ID (looks like "G-XXXXXXXXXX")
-// into the NEXT_PUBLIC_GA_ID env var in Vercel.
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// Google Analytics 4 Measurement ID. Not sensitive (it's public in every
+// page's HTML anyway), so it's hardcoded here as a default. Can still be
+// overridden via the NEXT_PUBLIC_GA_ID env var in Vercel if it ever changes.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-4S62ZMPF1N";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casa-moya.com"),
