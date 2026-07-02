@@ -34,7 +34,10 @@ export const properties: Property[] = [
       nl: "Seaview villa in Moraira met privézwembad, tuin en balkon met uitzicht op zee. Licht, ruim en rustig gelegen op 3,2 km van het centrum en 2,1 km van het strand.",
       en: "Seaview villa in Moraira with a private pool, garden, and a sea-view balcony. Light, spacious and quietly located, 3.2 km from the centre and 2.1 km from the beach."
     },
-    icalUrls: []
+    icalUrls: [
+      "https://ical.booking.com/v1/export?t=29a54afe-d090-4eec-8193-755dd760fa8c",
+      "https://www.airbnb.com/calendar/ical/53103651.ics?t=6aeed9c315c24079bfe59c4668b668fc"
+    ]
   },
   {
     slug: "moya-apartment-denia",
@@ -54,7 +57,10 @@ export const properties: Property[] = [
       nl: "Appartement met zeezicht in Denia, op 90 meter van het strand van Les Deveses. Terras en balkon met zeezicht, gratis parkeren op eigen terrein.",
       en: "Sea-view apartment in Denia, just 90 metres from Les Deveses beach. Terrace and balcony with sea views, free on-site parking."
     },
-    icalUrls: []
+    icalUrls: [
+      "https://www.airbnb.com/calendar/ical/1118123648822104746.ics?t=3c0a0aad03e04920a23280f11f34a279",
+      "https://ical.booking.com/v1/export?t=771a8bf5-3572-4c01-b900-4c7cee5117f4"
+    ]
   }
 ];
 

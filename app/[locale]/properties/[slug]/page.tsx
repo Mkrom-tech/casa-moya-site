@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { properties, getProperty, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import InquiryForm from "@/components/InquiryForm";
-import AvailabilityNote from "@/components/AvailabilityNote";
+import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import Link from "next/link";
 
 export function generateStaticParams() {
@@ -60,7 +60,7 @@ export default function PropertyPage({
             </ul>
           </div>
 
-          <AvailabilityNote locale={params.locale} property={property} />
+          <AvailabilityCalendar locale={params.locale} slug={property.slug} />
         </div>
 
         <aside className="space-y-4">
