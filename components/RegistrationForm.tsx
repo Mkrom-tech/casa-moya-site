@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
+import SignaturePad, { type SignaturePadHandle } from "@/components/SignaturePad";
 
 const MAX_TOTAL_BYTES = 4 * 1024 * 1024; // 4 MB combined, to stay under serverless payload limits
 
@@ -21,30 +22,40 @@ export default function RegistrationForm({
   initialSlug?: string;
 }) {
   const dict = getDictionary(locale);
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error" | "too-large">(
-    "idle"
-  );
-
-  function totalSize(form: HTMLFormElement) {
-    const passportFiles = (form.elements.namedItem("passportCopy") as HTMLInputElement)?.files;
-    const signatureFiles = (form.elements.namedItem("signature") as HTMLInputElement)?.files;
-    let total = 0;
-    if (passportFiles) for (const f of Array.from(passportFiles)) total += f.size;
-    if (signatureFiles) for (const f of Array.from(signatureFiles)) total += f.size;
-    return total;
-  }
+  const signaturePadRef = useRef<SignaturePadHandle>(null);
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "sent" | "error" | "too-large" | "no-signature"
+  >("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
+    const pad = signaturePadRef.current;
 
-    if (totalSize(form) > MAX_TOTAL_BYTES) {
+    if (!pad || pad.isEmpty()) {
+      setStatus("no-signature");
+      return;
+    }
+
+    const signatureBlob = await pad.toBlob();
+    if (!signatureBlob) {
+      setStatus("no-signature");
+      return;
+    }
+
+    const passportFiles =
+      (form.elements.namedItem("passportCopy") as HTMLInputElement)?.files || [];
+    let total = signatureBlob.size;
+    for (const f of Array.from(passportFiles)) total += f.size;
+
+    if (total > MAX_TOTAL_BYTES) {
       setStatus("too-large");
       return;
     }
 
     setStatus("sending");
     const formData = new FormData(form);
+    formData.append("signature", signatureBlob, "signature.png");
 
     try {
       const res = await fetch("/api/register", {
@@ -166,19 +177,12 @@ export default function RegistrationForm({
         <p className="mt-1 text-xs text-charcoal/50">{dict.register.passportCopyHint}</p>
       </div>
 
-      <div>
-        <label className="mb-1 block text-sm text-charcoal">
-          {dict.register.signatureLabel}
-        </label>
-        <input
-          required
-          type="file"
-          name="signature"
-          accept="image/*"
-          className="w-full rounded-lg border border-charcoal/20 bg-white px-3 py-2 text-sm"
-        />
-        <p className="mt-1 text-xs text-charcoal/50">{dict.register.signatureHint}</p>
-      </div>
+      <SignaturePad
+        ref={signaturePadRef}
+        label={dict.register.signatureLabel}
+        hint={dict.register.signatureHint}
+        clearLabel={dict.register.signatureClear}
+      />
 
       <button
         type="submit"
@@ -193,6 +197,9 @@ export default function RegistrationForm({
       )}
       {status === "too-large" && (
         <p className="text-sm text-red-600">{dict.register.sizeError}</p>
+      )}
+      {status === "no-signature" && (
+        <p className="text-sm text-red-600">{dict.register.signatureRequired}</p>
       )}
       <p className="text-xs text-charcoal/50">{dict.register.pageSubtitle}</p>
     </form>
