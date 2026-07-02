@@ -12,9 +12,6 @@ export interface Property {
   images: string[];
   amenities: { nl: string[]; en: string[] };
   description: { nl: string; en: string };
-  // Fill in with the real .ics export URL from Airbnb / Booking.com
-  // (Airbnb: Calendar > Availability > "Export calendar";
-  //  Booking.com: Extranet > Calendar > Sync calendars)
   icalUrls: string[];
 }
 
@@ -26,32 +23,12 @@ export const properties: Property[] = [
     guests: 4,
     bedrooms: 2,
     bathrooms: 2,
-    pricePerNight: 145, // TODO: vul je echte prijs in
-    heroImage: "/images/placeholder-1.jpg",
-    images: ["/images/placeholder-1.jpg", "/images/placeholder-2.jpg"],
+    pricePerNight: 145,
+    heroImage: "/images/moraira-1.jpg",
+    images: ["/images/moraira-1.jpg", "/images/moraira-2.jpg", "/images/moraira-3.jpg"],
     amenities: {
-      nl: [
-        "Privézwembad",
-        "Zeezicht",
-        "Tuin",
-        "Balkon",
-        "Airco",
-        "Wifi",
-        "Wasmachine",
-        "Vaatwasser",
-        "Satelliet-tv"
-      ],
-      en: [
-        "Private pool",
-        "Sea view",
-        "Garden",
-        "Balcony",
-        "Air conditioning",
-        "Wifi",
-        "Washing machine",
-        "Dishwasher",
-        "Satellite TV"
-      ]
+      nl: ["Privézwembad", "Zeezicht", "Tuin", "Balkon", "Airco", "Wifi", "Wasmachine", "Vaatwasser", "Satelliet-tv"],
+      en: ["Private pool", "Sea view", "Garden", "Balcony", "Air conditioning", "Wifi", "Washing machine", "Dishwasher", "Satellite TV"]
     },
     description: {
       nl: "Seaview villa in Moraira met privézwembad, tuin en balkon met uitzicht op zee. Licht, ruim en rustig gelegen op 3,2 km van het centrum en 2,1 km van het strand.",
@@ -66,28 +43,12 @@ export const properties: Property[] = [
     guests: 4,
     bedrooms: 2,
     bathrooms: 1,
-    pricePerNight: 110, // TODO: vul je echte prijs in
-    heroImage: "/images/placeholder-2.jpg",
-    images: ["/images/placeholder-2.jpg", "/images/placeholder-1.jpg"],
+    pricePerNight: 110,
+    heroImage: "/images/denia-1.jpg",
+    images: ["/images/denia-1.jpg", "/images/denia-2.jpg"],
     amenities: {
-      nl: [
-        "Vlak bij strand (90 m)",
-        "Zeezicht",
-        "Terras",
-        "Balkon",
-        "Gratis parkeren",
-        "Wifi",
-        "Fietsenstalling"
-      ],
-      en: [
-        "Steps from the beach (90 m)",
-        "Sea view",
-        "Terrace",
-        "Balcony",
-        "Free parking",
-        "Wifi",
-        "Bicycle parking"
-      ]
+      nl: ["Vlak bij strand (90 m)", "Zeezicht", "Terras", "Balkon", "Gratis parkeren", "Wifi", "Fietsenstalling"],
+      en: ["Steps from the beach (90 m)", "Sea view", "Terrace", "Balcony", "Free parking", "Wifi", "Bicycle parking"]
     },
     description: {
       nl: "Appartement met zeezicht in Denia, op 90 meter van het strand van Les Deveses. Terras en balkon met zeezicht, gratis parkeren op eigen terrein.",
