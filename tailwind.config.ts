@@ -11,7 +11,8 @@ const config: Config = {
         charcoal: "#33362f"
       },
       fontFamily: {
-        display: ["Georgia", "serif"]
+        display: ["Georgia", "serif"],
+        logo: ["Jost", "sans-serif"]
       }
     }
   },

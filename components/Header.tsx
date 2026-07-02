@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
+import { LogoMark } from "@/components/Logo";
 
 const LOCALES: Locale[] = ["nl", "en", "es", "it"];
 
@@ -12,12 +13,12 @@ export default function Header({ locale }: { locale: Locale }) {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
         <Link
           href={`/${locale}`}
-          className="flex items-baseline gap-2 font-display text-xl tracking-tight text-ink"
+          className="flex items-center gap-3 text-ink"
         >
-          <span className="text-sm font-semibold tracking-[0.2em] text-terracotta">
-            CM
+          <LogoMark className="h-9 w-9 shrink-0" />
+          <span className="font-logo text-lg font-light uppercase tracking-[0.18em]">
+            {dict.siteName}
           </span>
-          <span>{dict.siteName}</span>
         </Link>
         <nav className="flex items-center gap-6 text-sm text-charcoal">
           <Link href={`/${locale}#properties`}>{dict.nav.properties}</Link>
