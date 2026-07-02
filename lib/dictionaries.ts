@@ -5,11 +5,11 @@ export const dictionaries = {
     siteName: "Casa Moya",
     nav: { properties: "Onze huizen", contact: "Contact" },
     home: {
-      title: "Vakantiehuizen aan de Costa Blanca — boek rechtstreeks, zonder commissie",
+      title: "Vakantiehuizen met zeezicht aan de Costa Blanca — boek rechtstreeks, zonder commissie",
       subtitle:
         "Boek rechtstreeks bij ons — geen commissie voor Airbnb of Booking.com, en altijd het beste directe tarief.",
       cta: "Bekijk beschikbaarheid",
-      metaTitle: "Vakantiehuizen Moraira & Denia — boek direct, zonder commissie",
+      metaTitle: "Vakantiehuizen met zeezicht in Moraira & Denia — boek direct, zonder commissie",
       metaDescription:
         "Casa Moya Moraira (villa met privézwembad en zeezicht) en Casa Moya Seaview Apartment Denia (appartement bij het strand van Les Deveses), Costa Blanca. Boek rechtstreeks bij de eigenaar — altijd de beste prijs, geen boekingskosten."
     },
@@ -51,11 +51,11 @@ export const dictionaries = {
     siteName: "Casa Moya",
     nav: { properties: "Our houses", contact: "Contact" },
     home: {
-      title: "Vacation Homes on the Costa Blanca — Book Direct, No Commission",
+      title: "Sea View Vacation Homes on the Costa Blanca — Book Direct, No Commission",
       subtitle:
         "Book directly with us — no commission for Airbnb or Booking.com, always our best direct rate.",
       cta: "Check availability",
-      metaTitle: "Villa & Apartment Rentals Moraira & Denia — Book Direct",
+      metaTitle: "Sea View Villa & Apartment Rentals in Moraira & Denia — Book Direct",
       metaDescription:
         "Casa Moya Moraira (sea-view villa with private pool) and Casa Moya Seaview Apartment Denia (apartment near Les Deveses beach), Costa Blanca. Book directly with the owner — best price guaranteed, no booking fees."
     },
@@ -97,11 +97,11 @@ export const dictionaries = {
     siteName: "Casa Moya",
     nav: { properties: "Nuestras casas", contact: "Contacto" },
     home: {
-      title: "Casas de vacaciones en la Costa Blanca — reserva directa, sin comisión",
+      title: "Casas de vacaciones con vistas al mar en la Costa Blanca — reserva directa, sin comisión",
       subtitle:
         "Reserva directamente con nosotros — sin comisión de Airbnb o Booking.com, y siempre nuestra mejor tarifa directa.",
       cta: "Consultar disponibilidad",
-      metaTitle: "Casas de vacaciones en Moraira y Denia — reserva directa, sin comisión",
+      metaTitle: "Casas de vacaciones con vistas al mar en Moraira y Denia — reserva directa, sin comisión",
       metaDescription:
         "Casa Moya Moraira (villa con piscina privada y vistas al mar) y Casa Moya Seaview Apartment Denia (apartamento junto a la playa de Les Deveses), Costa Blanca. Reserva directamente con el propietario — el mejor precio garantizado, sin gastos de reserva."
     },
@@ -143,11 +143,11 @@ export const dictionaries = {
     siteName: "Casa Moya",
     nav: { properties: "Le nostre case", contact: "Contatti" },
     home: {
-      title: "Case vacanza sulla Costa Blanca — prenota diretto, senza commissioni",
+      title: "Case vacanza vista mare sulla Costa Blanca — prenota diretto, senza commissioni",
       subtitle:
         "Prenota direttamente con noi — nessuna commissione per Airbnb o Booking.com, sempre la nostra migliore tariffa diretta.",
       cta: "Verifica disponibilità",
-      metaTitle: "Case vacanza a Moraira e Denia — prenota diretto, senza commissioni",
+      metaTitle: "Case vacanza vista mare a Moraira e Denia — prenota diretto, senza commissioni",
       metaDescription:
         "Casa Moya Moraira (villa con piscina privata e vista mare) e Casa Moya Seaview Apartment Denia (appartamento vicino alla spiaggia di Les Deveses), Costa Blanca. Prenota direttamente con il proprietario — il miglior prezzo garantito, nessuna spesa di prenotazione."
     },
@@ -183,6 +183,52 @@ export const dictionaries = {
     },
     footer: {
       rights: "Tutti i diritti riservati."
+    }
+  },
+  de: {
+    siteName: "Casa Moya",
+    nav: { properties: "Unsere Häuser", contact: "Kontakt" },
+    home: {
+      title: "Ferienhäuser mit Meerblick an der Costa Blanca — direkt buchen, ohne Provision",
+      subtitle:
+        "Buchen Sie direkt bei uns — keine Provision für Airbnb oder Booking.com, immer unser bester Direktpreis.",
+      cta: "Verfügbarkeit prüfen",
+      metaTitle: "Villa & Wohnung mit Meerblick in Moraira & Denia — direkt buchen",
+      metaDescription:
+        "Casa Moya Moraira (Villa mit Meerblick und Privatpool) und Casa Moya Seaview Apartment Denia (Wohnung nahe Strand Les Deveses), Costa Blanca. Direkt beim Eigentümer buchen — bester Preis garantiert, keine Buchungsgebühren."
+    },
+    property: {
+      guests: "Gäste",
+      bedrooms: "Schlafzimmer",
+      bathrooms: "Badezimmer",
+      perNight: "pro Nacht",
+      amenitiesTitle: "Ausstattung",
+      galleryTitle: "Fotos",
+      availabilityTitle: "Verfügbarkeit",
+      inquiryTitle: "Buchungsanfrage",
+      backToOverview: "Zurück zur Übersicht",
+      loadingAvailability: "Verfügbarkeit wird geladen…",
+      notConnected:
+        "Verbinden Sie hier die Airbnb- und Booking.com-Kalender (iCal), damit Gäste stets die aktuelle Verfügbarkeit sehen und Doppelbuchungen ausgeschlossen sind.",
+      calendarError: "Der Kalender konnte gerade nicht geladen werden. Bitte versuchen Sie es später erneut.",
+      available: "Verfügbar",
+      booked: "Belegt"
+    },
+    form: {
+      name: "Name",
+      email: "E-Mail-Adresse",
+      checkin: "Anreise",
+      checkout: "Abreise",
+      guests: "Anzahl der Gäste",
+      message: "Nachricht (optional)",
+      submit: "Anfrage senden",
+      success:
+        "Danke! Ihre Anfrage wurde gesendet. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      note: "Dies ist eine Anfrage, keine verbindliche Buchung. Sie erhalten eine persönliche Bestätigung von uns.",
+      error: "Etwas ist schiefgelaufen, bitte versuchen Sie es später erneut oder schreiben Sie uns direkt eine E-Mail."
+    },
+    footer: {
+      rights: "Alle Rechte vorbehalten."
     }
   }
 } satisfies Record<Locale, unknown>;

@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import type { Locale } from "@/lib/properties";
 
 export function generateStaticParams() {
-  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }];
+  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }, { locale: "de" }];
 }
 
 export default function LocaleLayout({

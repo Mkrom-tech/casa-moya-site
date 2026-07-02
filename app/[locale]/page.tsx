@@ -4,7 +4,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import PropertyCard from "@/components/PropertyCard";
 
 export function generateStaticParams() {
-  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }];
+  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }, { locale: "de" }];
 }
 
 export function generateMetadata({
@@ -18,7 +18,7 @@ export function generateMetadata({
     description: dict.home.metaDescription,
     alternates: {
       canonical: `/${params.locale}`,
-      languages: { nl: "/nl", en: "/en", es: "/es", it: "/it" }
+      languages: { nl: "/nl", en: "/en", es: "/es", it: "/it", de: "/de" }
     },
     openGraph: {
       title: dict.home.metaTitle,

@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import { LogoMark } from "@/components/Logo";
 
-const LOCALES: Locale[] = ["nl", "en", "es", "it"];
+const LOCALES: Locale[] = ["nl", "en", "es", "it", "de"];
 
 export default function Header({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -15,8 +15,8 @@ export default function Header({ locale }: { locale: Locale }) {
           href={`/${locale}`}
           className="flex items-center gap-3 text-ink"
         >
-          <LogoMark className="h-7 w-7 shrink-0" />
-          <span className="font-logo text-sm font-light uppercase tracking-[0.12em]">
+          <LogoMark className="h-8 w-8 shrink-0" />
+          <span className="font-logo text-base font-light uppercase tracking-[0.14em]">
             {dict.siteName}
           </span>
         </Link>
