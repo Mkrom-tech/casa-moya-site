@@ -34,7 +34,7 @@ export const areaGuides: AreaGuide[] = [
       de: "ferienvilla-moraira"
     },
     relatedPropertySlug: "casa-moya-moraira",
-    heroImage: "/images/moraira-1.jpg",
+    heroImage: "/images/moraira-2.jpg",
     title: {
       nl: "Vakantievilla huren in Moraira — met privézwembad en zeezicht",
       en: "Villa Rental in Moraira — Private Pool and Sea Views",
@@ -198,7 +198,7 @@ export const areaGuides: AreaGuide[] = [
       de: "meerblick-wohnung-denia"
     },
     relatedPropertySlug: "moya-apartment-denia",
-    heroImage: "/images/denia-1.avif",
+    heroImage: "/images/denia-2.avif",
     title: {
       nl: "Zeezicht appartement huren in Denia — aan het strand van Les Deveses",
       en: "Sea View Apartment Rental in Denia — On Les Deveses Beach",

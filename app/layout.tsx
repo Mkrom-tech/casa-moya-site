@@ -1,5 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Script from "next/script";
+
+// Google Search Console: paste the verification code Google gives you
+// (Search Console > Settings > Ownership verification > HTML tag > just the
+// content="..." value) into the NEXT_PUBLIC_GSC_VERIFICATION env var in Vercel.
+const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
+
+// Google Analytics 4: paste your Measurement ID (looks like "G-XXXXXXXXXX")
+// into the NEXT_PUBLIC_GA_ID env var in Vercel.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casa-moya.com"),
@@ -8,10 +18,11 @@ export const metadata: Metadata = {
     template: "%s | Casa Moya"
   },
   description:
-    "Boek rechtstreeks — Casa Moya Moraira en Moya Apartment Denia, Costa Blanca. Geen commissie, altijd de beste prijs.",
+    "Boek rechtstreeks — Casa Moya Villa Moraira en Moya Apartment Denia, Costa Blanca. Geen commissie, altijd de beste prijs.",
   icons: {
     icon: "/favicon.svg"
-  }
+  },
+  ...(GSC_VERIFICATION ? { verification: { google: GSC_VERIFICATION } } : {})
 };
 
 export default function RootLayout({
@@ -29,7 +40,25 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
+      </body>
     </html>
   );
 }

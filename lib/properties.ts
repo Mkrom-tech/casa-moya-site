@@ -23,7 +23,7 @@ export interface Property {
 export const properties: Property[] = [
   {
     slug: "casa-moya-moraira",
-    name: "Casa Moya Moraira",
+    name: "Casa Moya Villa Moraira",
     location: "Moraira / Teulada, Costa Blanca",
     guests: 4,
     bedrooms: 2,
@@ -121,7 +121,7 @@ export const properties: Property[] = [
     guests: 4,
     bedrooms: 2,
     bathrooms: 1,
-    pricePerNight: 115,
+    pricePerNight: 125,
     heroImage: "/images/denia-1.avif",
     images: Array.from({ length: 24 }, (_, i) => `/images/denia-${i + 1}.avif`),
     amenities: {

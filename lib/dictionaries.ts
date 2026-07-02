@@ -11,7 +11,7 @@ export const dictionaries = {
       cta: "Bekijk beschikbaarheid",
       metaTitle: "Vakantiehuizen met zeezicht in Moraira & Denia — boek direct, zonder commissie",
       metaDescription:
-        "Casa Moya Moraira (villa met privézwembad en zeezicht) en Casa Moya Seaview Apartment Denia (appartement bij het strand van Les Deveses), Costa Blanca. Boek rechtstreeks bij de eigenaar — altijd de beste prijs, geen boekingskosten."
+        "Casa Moya Villa Moraira (villa met privézwembad en zeezicht) en Casa Moya Seaview Apartment Denia (appartement bij het strand van Les Deveses), Costa Blanca. Boek rechtstreeks bij de eigenaar — altijd de beste prijs, geen boekingskosten."
     },
     property: {
       guests: "gasten",
@@ -99,7 +99,7 @@ export const dictionaries = {
       cta: "Check availability",
       metaTitle: "Sea View Villa & Apartment Rentals in Moraira & Denia — Book Direct",
       metaDescription:
-        "Casa Moya Moraira (sea-view villa with private pool) and Casa Moya Seaview Apartment Denia (apartment near Les Deveses beach), Costa Blanca. Book directly with the owner — best price guaranteed, no booking fees."
+        "Casa Moya Villa Moraira (sea-view villa with private pool) and Casa Moya Seaview Apartment Denia (apartment near Les Deveses beach), Costa Blanca. Book directly with the owner — best price guaranteed, no booking fees."
     },
     property: {
       guests: "guests",
@@ -187,7 +187,7 @@ export const dictionaries = {
       cta: "Consultar disponibilidad",
       metaTitle: "Casas de vacaciones con vistas al mar en Moraira y Denia — reserva directa, sin comisión",
       metaDescription:
-        "Casa Moya Moraira (villa con piscina privada y vistas al mar) y Casa Moya Seaview Apartment Denia (apartamento junto a la playa de Les Deveses), Costa Blanca. Reserva directamente con el propietario — el mejor precio garantizado, sin gastos de reserva."
+        "Casa Moya Villa Moraira (villa con piscina privada y vistas al mar) y Casa Moya Seaview Apartment Denia (apartamento junto a la playa de Les Deveses), Costa Blanca. Reserva directamente con el propietario — el mejor precio garantizado, sin gastos de reserva."
     },
     property: {
       guests: "huéspedes",
@@ -275,7 +275,7 @@ export const dictionaries = {
       cta: "Verifica disponibilità",
       metaTitle: "Case vacanza vista mare a Moraira e Denia — prenota diretto, senza commissioni",
       metaDescription:
-        "Casa Moya Moraira (villa con piscina privata e vista mare) e Casa Moya Seaview Apartment Denia (appartamento vicino alla spiaggia di Les Deveses), Costa Blanca. Prenota direttamente con il proprietario — il miglior prezzo garantito, nessuna spesa di prenotazione."
+        "Casa Moya Villa Moraira (villa con piscina privata e vista mare) e Casa Moya Seaview Apartment Denia (appartamento vicino alla spiaggia di Les Deveses), Costa Blanca. Prenota direttamente con il proprietario — il miglior prezzo garantito, nessuna spesa di prenotazione."
     },
     property: {
       guests: "ospiti",
@@ -363,7 +363,7 @@ export const dictionaries = {
       cta: "Verfügbarkeit prüfen",
       metaTitle: "Villa & Wohnung mit Meerblick in Moraira & Denia — direkt buchen",
       metaDescription:
-        "Casa Moya Moraira (Villa mit Meerblick und Privatpool) und Casa Moya Seaview Apartment Denia (Wohnung nahe Strand Les Deveses), Costa Blanca. Direkt beim Eigentümer buchen — bester Preis garantiert, keine Buchungsgebühren."
+        "Casa Moya Villa Moraira (Villa mit Meerblick und Privatpool) und Casa Moya Seaview Apartment Denia (Wohnung nahe Strand Les Deveses), Costa Blanca. Direkt beim Eigentümer buchen — bester Preis garantiert, keine Buchungsgebühren."
     },
     property: {
       guests: "Gäste",
