@@ -4,6 +4,7 @@ import { properties, getProperty, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import InquiryForm from "@/components/InquiryForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
+import PhotoGallery from "@/components/PhotoGallery";
 import Link from "next/link";
 
 export function generateStaticParams() {
@@ -113,6 +114,13 @@ export default function PropertyPage({
               ))}
             </ul>
           </div>
+
+          <PhotoGallery
+            images={property.images}
+            heroImage={property.heroImage}
+            alt={property.name}
+            title={dict.property.galleryTitle}
+          />
 
           <AvailabilityCalendar locale={params.locale} slug={property.slug} />
         </div>

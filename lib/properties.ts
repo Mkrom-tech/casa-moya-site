@@ -30,11 +30,7 @@ export const properties: Property[] = [
     bathrooms: 2,
     pricePerNight: 150,
     heroImage: "/images/moraira-1.jpg",
-    images: [
-      "/images/moraira-1.jpg",
-      "/images/moraira-2.jpg",
-      "/images/moraira-3.jpg"
-    ],
+    images: Array.from({ length: 28 }, (_, i) => `/images/moraira-${i + 1}.jpg`),
     amenities: {
       nl: [
         "Privézwembad",
@@ -113,7 +109,7 @@ export const properties: Property[] = [
     bathrooms: 1,
     pricePerNight: 115,
     heroImage: "/images/denia-1.jpg",
-    images: ["/images/denia-1.jpg", "/images/denia-2.jpg"],
+    images: Array.from({ length: 24 }, (_, i) => `/images/denia-${i + 1}.jpg`),
     amenities: {
       nl: [
         "Vlak bij strand (90 m)",
