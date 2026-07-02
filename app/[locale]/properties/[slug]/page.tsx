@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { properties, getProperty, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
+import { areaGuides, getAreaGuideHref } from "@/lib/areaGuides";
 import InquiryForm from "@/components/InquiryForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import PhotoGallery from "@/components/PhotoGallery";
@@ -59,6 +60,7 @@ export default function PropertyPage({
   const dict = getDictionary(params.locale);
   const description = property.description[params.locale];
   const amenities = property.amenities[params.locale];
+  const relatedGuide = areaGuides.find((g) => g.relatedPropertySlug === property.slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -125,6 +127,15 @@ export default function PropertyPage({
           />
 
           <AvailabilityCalendar locale={params.locale} slug={property.slug} />
+
+          {relatedGuide && (
+            <Link
+              href={getAreaGuideHref(params.locale, relatedGuide)}
+              className="inline-block text-sm text-charcoal/60 underline hover:text-ink"
+            >
+              {dict.areaGuide.moreGuides} →
+            </Link>
+          )}
         </div>
 
         <aside className="space-y-4">

@@ -67,6 +67,26 @@ export const dictionaries = {
     footer: {
       rights: "Alle rechten voorbehouden.",
       registerLink: "Gastregistratie"
+    },
+    areaGuide: {
+      faqTitle: "Veelgestelde vragen",
+      ctaTitle: "Bekijk Casa Moya en check de beschikbaarheid",
+      moreGuides: "Meer over de omgeving"
+    },
+    homeExtra: {
+      whyTitle: "Waarom rechtstreeks boeken bij Casa Moya",
+      why1Title: "Geen commissie",
+      why1Body: "Geen opslag van Airbnb of Booking.com — je betaalt altijd onze beste directe prijs.",
+      why2Title: "Persoonlijk contact",
+      why2Body: "Rechtstreeks contact met de eigenaar, voor, tijdens en na je verblijf.",
+      why3Title: "Altijd actuele beschikbaarheid",
+      why3Body: "Onze kalender is gekoppeld aan Airbnb en Booking.com, dus geen dubbele boekingen.",
+      guidesTitle: "Op zoek naar de juiste plek?",
+      guidesSubtitle: "Praktische informatie over Moraira en Denia om je te helpen kiezen.",
+      guideMoraira: "Vakantievilla huren in Moraira",
+      guideMorairaDesc: "Privézwembad, zeezicht en 2,1 km van het strand.",
+      guideDenia: "Zeezicht appartement huren in Denia",
+      guideDeniaDesc: "90 meter van het strand van Les Deveses."
     }
   },
   en: {
@@ -135,6 +155,26 @@ export const dictionaries = {
     footer: {
       rights: "All rights reserved.",
       registerLink: "Guest registration"
+    },
+    areaGuide: {
+      faqTitle: "Frequently asked questions",
+      ctaTitle: "View Casa Moya and check availability",
+      moreGuides: "More about the area"
+    },
+    homeExtra: {
+      whyTitle: "Why book direct with Casa Moya",
+      why1Title: "No commission",
+      why1Body: "No mark-up from Airbnb or Booking.com — you always pay our best direct price.",
+      why2Title: "Personal contact",
+      why2Body: "Direct contact with the owner, before, during and after your stay.",
+      why3Title: "Always up-to-date availability",
+      why3Body: "Our calendar is synced with Airbnb and Booking.com, so no double bookings.",
+      guidesTitle: "Looking for the right spot?",
+      guidesSubtitle: "Practical information about Moraira and Denia to help you choose.",
+      guideMoraira: "Villa rental in Moraira",
+      guideMorairaDesc: "Private pool, sea views, 2.1 km from the beach.",
+      guideDenia: "Sea view apartment rental in Denia",
+      guideDeniaDesc: "90 metres from Les Deveses beach."
     }
   },
   es: {
@@ -203,6 +243,26 @@ export const dictionaries = {
     footer: {
       rights: "Todos los derechos reservados.",
       registerLink: "Registro de huéspedes"
+    },
+    areaGuide: {
+      faqTitle: "Preguntas frecuentes",
+      ctaTitle: "Ver Casa Moya y consultar disponibilidad",
+      moreGuides: "Más sobre la zona"
+    },
+    homeExtra: {
+      whyTitle: "Por qué reservar directamente con Casa Moya",
+      why1Title: "Sin comisión",
+      why1Body: "Sin recargo de Airbnb o Booking.com — siempre pagas nuestro mejor precio directo.",
+      why2Title: "Contacto personal",
+      why2Body: "Contacto directo con el propietario, antes, durante y después de tu estancia.",
+      why3Title: "Disponibilidad siempre actualizada",
+      why3Body: "Nuestro calendario está sincronizado con Airbnb y Booking.com, así que no hay reservas dobles.",
+      guidesTitle: "¿Buscas el lugar ideal?",
+      guidesSubtitle: "Información práctica sobre Moraira y Denia para ayudarte a elegir.",
+      guideMoraira: "Villa en alquiler en Moraira",
+      guideMorairaDesc: "Piscina privada, vistas al mar, a 2,1 km de la playa.",
+      guideDenia: "Apartamento con vistas al mar en Denia",
+      guideDeniaDesc: "A 90 metros de la playa de Les Deveses."
     }
   },
   it: {
@@ -271,6 +331,26 @@ export const dictionaries = {
     footer: {
       rights: "Tutti i diritti riservati.",
       registerLink: "Registrazione ospiti"
+    },
+    areaGuide: {
+      faqTitle: "Domande frequenti",
+      ctaTitle: "Scopri Casa Moya e verifica la disponibilità",
+      moreGuides: "Scopri di più sulla zona"
+    },
+    homeExtra: {
+      whyTitle: "Perché prenotare direttamente con Casa Moya",
+      why1Title: "Nessuna commissione",
+      why1Body: "Nessun sovrapprezzo di Airbnb o Booking.com — paghi sempre il nostro miglior prezzo diretto.",
+      why2Title: "Contatto personale",
+      why2Body: "Contatto diretto con il proprietario, prima, durante e dopo il soggiorno.",
+      why3Title: "Disponibilità sempre aggiornata",
+      why3Body: "Il nostro calendario è sincronizzato con Airbnb e Booking.com, quindi niente doppie prenotazioni.",
+      guidesTitle: "Cerchi il posto giusto?",
+      guidesSubtitle: "Informazioni pratiche su Moraira e Denia per aiutarti a scegliere.",
+      guideMoraira: "Villa in affitto a Moraira",
+      guideMorairaDesc: "Piscina privata, vista mare, a 2,1 km dalla spiaggia.",
+      guideDenia: "Appartamento vista mare a Denia",
+      guideDeniaDesc: "A 90 metri dalla spiaggia di Les Deveses."
     }
   },
   de: {
@@ -339,6 +419,26 @@ export const dictionaries = {
     footer: {
       rights: "Alle Rechte vorbehalten.",
       registerLink: "Gästeregistrierung"
+    },
+    areaGuide: {
+      faqTitle: "Häufig gestellte Fragen",
+      ctaTitle: "Casa Moya ansehen und Verfügbarkeit prüfen",
+      moreGuides: "Mehr über die Umgebung"
+    },
+    homeExtra: {
+      whyTitle: "Warum direkt bei Casa Moya buchen",
+      why1Title: "Keine Provision",
+      why1Body: "Kein Aufschlag von Airbnb oder Booking.com — Sie zahlen immer unseren besten Direktpreis.",
+      why2Title: "Persönlicher Kontakt",
+      why2Body: "Direkter Kontakt mit dem Eigentümer, vor, während und nach Ihrem Aufenthalt.",
+      why3Title: "Immer aktuelle Verfügbarkeit",
+      why3Body: "Unser Kalender ist mit Airbnb und Booking.com synchronisiert, also keine Doppelbuchungen.",
+      guidesTitle: "Auf der Suche nach dem richtigen Ort?",
+      guidesSubtitle: "Praktische Informationen über Moraira und Denia, die Ihnen bei der Wahl helfen.",
+      guideMoraira: "Villa mieten in Moraira",
+      guideMorairaDesc: "Privatpool, Meerblick, 2,1 km vom Strand entfernt.",
+      guideDenia: "Wohnung mit Meerblick mieten in Denia",
+      guideDeniaDesc: "90 Meter vom Strand Les Deveses entfernt."
     }
   }
 } satisfies Record<Locale, unknown>;

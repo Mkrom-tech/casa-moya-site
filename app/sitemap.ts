@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { properties } from "@/lib/properties";
+import { areaGuides } from "@/lib/areaGuides";
 
 const BASE_URL = "https://www.casa-moya.com";
 
@@ -22,5 +23,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...homeEntries, ...propertyEntries];
+  const guideEntries: MetadataRoute.Sitemap = areaGuides.flatMap((guide) =>
+    locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/${guide.slugs[locale]}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7
+    }))
+  );
+
+  return [...homeEntries, ...propertyEntries, ...guideEntries];
 }
