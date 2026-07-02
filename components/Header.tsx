@@ -15,8 +15,8 @@ export default function Header({ locale }: { locale: Locale }) {
           href={`/${locale}`}
           className="flex items-center gap-3 text-ink"
         >
-          <LogoMark className="h-9 w-9 shrink-0" />
-          <span className="font-logo text-lg font-light uppercase tracking-[0.18em]">
+          <LogoMark className="h-7 w-7 shrink-0" />
+          <span className="font-logo text-sm font-light uppercase tracking-[0.12em]">
             {dict.siteName}
           </span>
         </Link>
