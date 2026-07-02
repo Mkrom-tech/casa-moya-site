@@ -43,8 +43,28 @@ export const dictionaries = {
       note: "Dit is een aanvraag, geen definitieve boeking. Je ontvangt persoonlijk bevestiging van ons.",
       error: "Er ging iets mis, probeer het later opnieuw of mail ons direct."
     },
+    register: {
+      pageTitle: "Gastregistratie",
+      pageSubtitle: "Verplicht voor alle gasten, behalve kinderen onder de 12 jaar.",
+      propertyLabel: "Woning",
+      name: "Volledige naam",
+      email: "E-mailadres",
+      phone: "Telefoonnummer",
+      dob: "Geboortedatum",
+      passportNumber: "Paspoortnummer",
+      passportExpiry: "Vervaldatum paspoort",
+      passportCopyLabel: "Kopie paspoort",
+      passportCopyHint: "Max. 2 bestanden, samen max. 4 MB",
+      signatureLabel: "Handtekening (foto)",
+      signatureHint: "1 bestand, max. 4 MB",
+      submit: "Registratie versturen",
+      success: "Bedankt! Je registratie is ontvangen.",
+      error: "Er ging iets mis, probeer het opnieuw of neem contact met ons op.",
+      sizeError: "De bestanden zijn samen te groot (max. 4 MB). Maak kleinere foto's of upload er minder."
+    },
     footer: {
-      rights: "Alle rechten voorbehouden."
+      rights: "Alle rechten voorbehouden.",
+      registerLink: "Gastregistratie"
     }
   },
   en: {
@@ -89,8 +109,28 @@ export const dictionaries = {
       note: "This is a request, not a confirmed booking. You'll receive a personal confirmation from us.",
       error: "Something went wrong, please try again later or email us directly."
     },
+    register: {
+      pageTitle: "Guest Registration",
+      pageSubtitle: "Required for all guests, except children under 12.",
+      propertyLabel: "Property",
+      name: "Full name",
+      email: "Email address",
+      phone: "Phone number",
+      dob: "Date of birth",
+      passportNumber: "Passport number",
+      passportExpiry: "Passport expiry date",
+      passportCopyLabel: "Passport copy",
+      passportCopyHint: "Max. 2 files, 4 MB combined",
+      signatureLabel: "Signature (photo)",
+      signatureHint: "1 file, max. 4 MB",
+      submit: "Send registration",
+      success: "Thank you! Your registration has been received.",
+      error: "Something went wrong, please try again or contact us.",
+      sizeError: "The files together are too large (max. 4 MB). Please use smaller photos or fewer files."
+    },
     footer: {
-      rights: "All rights reserved."
+      rights: "All rights reserved.",
+      registerLink: "Guest registration"
     }
   },
   es: {
@@ -135,8 +175,28 @@ export const dictionaries = {
       note: "Esto es una solicitud, no una reserva confirmada. Recibirás una confirmación personal de nuestra parte.",
       error: "Algo salió mal, inténtalo de nuevo más tarde o escríbenos directamente."
     },
+    register: {
+      pageTitle: "Registro de huéspedes",
+      pageSubtitle: "Obligatorio para todos los huéspedes, excepto menores de 12 años.",
+      propertyLabel: "Alojamiento",
+      name: "Nombre completo",
+      email: "Correo electrónico",
+      phone: "Número de teléfono",
+      dob: "Fecha de nacimiento",
+      passportNumber: "Número de pasaporte",
+      passportExpiry: "Fecha de caducidad del pasaporte",
+      passportCopyLabel: "Copia del pasaporte",
+      passportCopyHint: "Máx. 2 archivos, 4 MB en total",
+      signatureLabel: "Firma (foto)",
+      signatureHint: "1 archivo, máx. 4 MB",
+      submit: "Enviar registro",
+      success: "¡Gracias! Hemos recibido tu registro.",
+      error: "Algo salió mal, inténtalo de nuevo o contáctanos.",
+      sizeError: "Los archivos juntos son demasiado grandes (máx. 4 MB). Usa fotos más pequeñas o menos archivos."
+    },
     footer: {
-      rights: "Todos los derechos reservados."
+      rights: "Todos los derechos reservados.",
+      registerLink: "Registro de huéspedes"
     }
   },
   it: {
@@ -181,8 +241,28 @@ export const dictionaries = {
       note: "Questa è una richiesta, non una prenotazione confermata. Riceverai una conferma personale da parte nostra.",
       error: "Qualcosa è andato storto, riprova più tardi o scrivici direttamente."
     },
+    register: {
+      pageTitle: "Registrazione ospiti",
+      pageSubtitle: "Obbligatorio per tutti gli ospiti, tranne i bambini sotto i 12 anni.",
+      propertyLabel: "Alloggio",
+      name: "Nome completo",
+      email: "Indirizzo email",
+      phone: "Numero di telefono",
+      dob: "Data di nascita",
+      passportNumber: "Numero di passaporto",
+      passportExpiry: "Data di scadenza del passaporto",
+      passportCopyLabel: "Copia del passaporto",
+      passportCopyHint: "Max. 2 file, 4 MB totali",
+      signatureLabel: "Firma (foto)",
+      signatureHint: "1 file, max. 4 MB",
+      submit: "Invia registrazione",
+      success: "Grazie! La tua registrazione è stata ricevuta.",
+      error: "Qualcosa è andato storto, riprova o contattaci.",
+      sizeError: "I file insieme sono troppo grandi (max. 4 MB). Usa foto più piccole o meno file."
+    },
     footer: {
-      rights: "Tutti i diritti riservati."
+      rights: "Tutti i diritti riservati.",
+      registerLink: "Registrazione ospiti"
     }
   },
   de: {
@@ -227,8 +307,28 @@ export const dictionaries = {
       note: "Dies ist eine Anfrage, keine verbindliche Buchung. Sie erhalten eine persönliche Bestätigung von uns.",
       error: "Etwas ist schiefgelaufen, bitte versuchen Sie es später erneut oder schreiben Sie uns direkt eine E-Mail."
     },
+    register: {
+      pageTitle: "Gästeregistrierung",
+      pageSubtitle: "Erforderlich für alle Gäste, außer Kindern unter 12 Jahren.",
+      propertyLabel: "Unterkunft",
+      name: "Vollständiger Name",
+      email: "E-Mail-Adresse",
+      phone: "Telefonnummer",
+      dob: "Geburtsdatum",
+      passportNumber: "Passnummer",
+      passportExpiry: "Ablaufdatum des Passes",
+      passportCopyLabel: "Passkopie",
+      passportCopyHint: "Max. 2 Dateien, zusammen 4 MB",
+      signatureLabel: "Unterschrift (Foto)",
+      signatureHint: "1 Datei, max. 4 MB",
+      submit: "Registrierung senden",
+      success: "Danke! Ihre Registrierung wurde empfangen.",
+      error: "Etwas ist schiefgelaufen, bitte versuchen Sie es erneut oder kontaktieren Sie uns.",
+      sizeError: "Die Dateien sind zusammen zu groß (max. 4 MB). Bitte kleinere Fotos oder weniger Dateien verwenden."
+    },
     footer: {
-      rights: "Alle Rechte vorbehalten."
+      rights: "Alle Rechte vorbehalten.",
+      registerLink: "Gästeregistrierung"
     }
   }
 } satisfies Record<Locale, unknown>;
