@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import SignaturePad, { type SignaturePadHandle } from "@/components/SignaturePad";
@@ -26,10 +26,26 @@ export default function RegistrationForm({
   const [status, setStatus] = useState<
     "idle" | "sending" | "sent" | "error" | "too-large" | "no-signature"
   >("idle");
+  const [formLoadedAt, setFormLoadedAt] = useState<number | null>(null);
+
+  useEffect(() => {
+    setFormLoadedAt(Date.now());
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
+
+    const honeypot = (form.elements.namedItem("companyWebsite") as HTMLInputElement)?.value;
+    if (honeypot) {
+      setStatus("sent");
+      return;
+    }
+    if (!formLoadedAt || Date.now() - formLoadedAt < 1500) {
+      setStatus("sent");
+      return;
+    }
+
     const pad = signaturePadRef.current;
 
     if (!pad || pad.isEmpty()) {
@@ -77,6 +93,17 @@ export default function RegistrationForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4" encType="multipart/form-data">
+      <input type="hidden" name="formLoadedAt" value={formLoadedAt ?? ""} readOnly />
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
+        <label htmlFor="companyWebsite-register">Company website</label>
+        <input
+          id="companyWebsite-register"
+          name="companyWebsite"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div>
         <label className="mb-1 block text-sm text-charcoal">
           {dict.register.propertyLabel}

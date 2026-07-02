@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 
@@ -17,9 +17,29 @@ export default function InquiryForm({
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
+  const [formLoadedAt, setFormLoadedAt] = useState<number | null>(null);
+
+  useEffect(() => {
+    setFormLoadedAt(Date.now());
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // Basic bot defense: a honeypot field bots tend to fill in, plus a
+    // minimum time-on-page check (real people don't fill a 6-field form
+    // in under a second).
+    const form = e.currentTarget;
+    const honeypot = (form.elements.namedItem("companyWebsite") as HTMLInputElement)?.value;
+    if (honeypot) {
+      setStatus("sent");
+      return;
+    }
+    if (!formLoadedAt || Date.now() - formLoadedAt < 1500) {
+      setStatus("sent");
+      return;
+    }
+
     setStatus("sending");
     const formData = new FormData(e.currentTarget);
     const payload = Object.fromEntries(formData.entries());
@@ -47,6 +67,17 @@ export default function InquiryForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <input type="hidden" name="formLoadedAt" value={formLoadedAt ?? ""} readOnly />
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
+        <label htmlFor="companyWebsite-inquiry">Company website</label>
+        <input
+          id="companyWebsite-inquiry"
+          name="companyWebsite"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-1 block text-sm text-charcoal">

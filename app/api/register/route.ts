@@ -16,9 +16,24 @@ const NOTIFY_EMAIL = process.env.INQUIRY_NOTIFY_EMAIL || "manonloont@gmail.com";
 const FROM_EMAIL = process.env.INQUIRY_FROM_EMAIL || "Casa Moya <onboarding@resend.dev>";
 
 const MAX_TOTAL_BYTES = 4 * 1024 * 1024; // 4 MB combined across all attachments
+const MIN_FILL_TIME_MS = 1500;
 
 export async function POST(req: Request) {
   const formData = await req.formData();
+
+  // Honeypot: bots tend to fill every field, including this hidden one.
+  // Pretend success so we don't tip them off.
+  if (formData.get("companyWebsite")) {
+    return NextResponse.json({ ok: true });
+  }
+
+  // Minimum time-on-page: a real person can't fill this form in under
+  // ~1.5s, so anything faster (or missing the timestamp entirely, which
+  // happens when a bot posts directly without loading the page) is spam.
+  const loadedAt = Number(formData.get("formLoadedAt"));
+  if (!loadedAt || Date.now() - loadedAt < MIN_FILL_TIME_MS) {
+    return NextResponse.json({ ok: true });
+  }
 
   const name = formData.get("name");
   const email = formData.get("email");

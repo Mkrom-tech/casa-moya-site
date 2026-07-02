@@ -16,10 +16,26 @@ const resend = process.env.RESEND_API_KEY
 const NOTIFY_EMAIL = process.env.INQUIRY_NOTIFY_EMAIL || "manonloont@gmail.com";
 const FROM_EMAIL = process.env.INQUIRY_FROM_EMAIL || "Casa Moya <onboarding@resend.dev>";
 
+const MIN_FILL_TIME_MS = 1500;
+
 export async function POST(req: Request) {
   const body = await req.json();
 
-  if (!body.name || !body.email || !body.checkin || !body.checkout) {
+  // Honeypot: bots tend to fill every field, including this hidden one.
+  // Pretend success so we don't tip them off.
+  if (body.companyWebsite) {
+    return NextResponse.json({ ok: true });
+  }
+
+  // Minimum time-on-page: a real person can't fill this form in under
+  // ~1.5s, so anything faster (or missing the timestamp entirely, which
+  // happens when a bot posts directly without loading the page) is spam.
+  const loadedAt = Number(body.formLoadedAt);
+  if (!loadedAt || Date.now() - loadedAt < MIN_FILL_TIME_MS) {
+    return NextResponse.json({ ok: true });
+  }
+
+  if (!body.name || !body.email || !body.checkin || !body.checkout || !body.guests) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
