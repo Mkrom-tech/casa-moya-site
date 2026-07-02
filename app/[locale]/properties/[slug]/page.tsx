@@ -5,6 +5,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import InquiryForm from "@/components/InquiryForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import PhotoGallery from "@/components/PhotoGallery";
+import { LogoMark } from "@/components/Logo";
 import Link from "next/link";
 
 export function generateStaticParams() {
@@ -141,14 +142,21 @@ export default function PropertyPage({
       </div>
 
       <div className="mt-12 rounded-2xl border border-charcoal/10 bg-white p-6">
-        <h2 className="mb-4 font-display text-xl text-ink">
-          {dict.property.inquiryTitle}
-        </h2>
-        <InquiryForm
-          locale={params.locale}
-          propertySlug={property.slug}
-          propertyName={property.name}
-        />
+        <div className="grid gap-8 sm:grid-cols-[1fr_auto]">
+          <div>
+            <h2 className="mb-4 font-display text-xl text-ink">
+              {dict.property.inquiryTitle}
+            </h2>
+            <InquiryForm
+              locale={params.locale}
+              propertySlug={property.slug}
+              propertyName={property.name}
+            />
+          </div>
+          <div className="hidden shrink-0 items-start justify-center pt-1 sm:flex">
+            <LogoMark className="h-28 w-28" />
+          </div>
+        </div>
       </div>
     </div>
     </>
