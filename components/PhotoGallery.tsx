@@ -24,13 +24,13 @@ export default function PhotoGallery({
             href={img}
             target="_blank"
             rel="noopener noreferrer"
-            className="block aspect-[4/3] overflow-hidden rounded-lg bg-charcoal/10"
+            className="group relative z-0 block aspect-[4/3] hover:z-20"
           >
             <img
               src={img}
               alt={`${alt} — ${i + 2}`}
               loading="lazy"
-              className="h-full w-full object-cover transition hover:scale-105"
+              className="h-full w-full origin-center rounded-lg bg-charcoal/10 object-cover transition-transform duration-300 ease-out group-hover:scale-[2.2] group-hover:shadow-2xl"
             />
           </a>
         ))}
