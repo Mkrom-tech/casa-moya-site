@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { properties, getProperty, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
@@ -9,6 +10,37 @@ export function generateStaticParams() {
   return properties.flatMap((p) =>
     ["nl", "en"].map((locale) => ({ locale, slug: p.slug }))
   );
+}
+
+export function generateMetadata({
+  params
+}: {
+  params: { locale: Locale; slug: string };
+}): Metadata {
+  const property = getProperty(params.slug);
+  if (!property) return {};
+
+  const title = property.metaTitle[params.locale];
+  const description = property.metaDescription[params.locale];
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/${params.locale}/properties/${property.slug}`,
+      languages: {
+        nl: `/nl/properties/${property.slug}`,
+        en: `/en/properties/${property.slug}`
+      }
+    },
+    openGraph: {
+      title,
+      description,
+      url: `/${params.locale}/properties/${property.slug}`,
+      images: [property.heroImage],
+      locale: params.locale === "nl" ? "nl_NL" : "en_US"
+    }
+  };
 }
 
 export default function PropertyPage({
@@ -23,7 +55,27 @@ export default function PropertyPage({
   const description = property.description[params.locale];
   const amenities = property.amenities[params.locale];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    name: property.name,
+    description,
+    image: `https://www.casa-moya.com${property.heroImage}`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: property.location,
+      addressCountry: "ES"
+    },
+    priceRange: `€${property.pricePerNight}`,
+    numberOfRooms: property.bedrooms
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div className="mx-auto max-w-4xl px-6 py-12">
       <Link
         href={`/${params.locale}`}
@@ -40,7 +92,7 @@ export default function PropertyPage({
       <div className="mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-charcoal/10">
         <img
           src={property.heroImage}
-          alt={property.name}
+          alt={`${property.name} — ${property.location}`}
           className="h-full w-full object-cover"
         />
       </div>
@@ -88,5 +140,6 @@ export default function PropertyPage({
         />
       </div>
     </div>
+    </>
   );
 }

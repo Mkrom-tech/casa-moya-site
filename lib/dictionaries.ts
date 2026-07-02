@@ -8,7 +8,10 @@ export const dictionaries = {
       title: "Twee huizen aan de Costa Blanca",
       subtitle:
         "Boek rechtstreeks bij ons — geen commissie voor Airbnb of Booking.com, en altijd het beste directe tarief.",
-      cta: "Bekijk beschikbaarheid"
+      cta: "Bekijk beschikbaarheid",
+      metaTitle: "Vakantiehuizen Moraira & Denia — boek direct, zonder commissie",
+      metaDescription:
+        "Casa Moya Moraira (villa met privézwembad en zeezicht) en Moya Apartment Denia (appartement bij het strand van Les Deveses), Costa Blanca. Boek rechtstreeks bij de eigenaar — altijd de beste prijs, geen boekingskosten."
     },
     property: {
       guests: "gasten",
@@ -43,7 +46,10 @@ export const dictionaries = {
       title: "Two houses on the Costa Blanca",
       subtitle:
         "Book directly with us — no commission for Airbnb or Booking.com, always our best direct rate.",
-      cta: "Check availability"
+      cta: "Check availability",
+      metaTitle: "Villa & Apartment Rentals Moraira & Denia — Book Direct",
+      metaDescription:
+        "Casa Moya Moraira (sea-view villa with private pool) and Moya Apartment Denia (apartment near Les Deveses beach), Costa Blanca. Book directly with the owner — best price guaranteed, no booking fees."
     },
     property: {
       guests: "guests",

@@ -1,9 +1,33 @@
+import type { Metadata } from "next";
 import { properties, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import PropertyCard from "@/components/PropertyCard";
 
 export function generateStaticParams() {
   return [{ locale: "nl" }, { locale: "en" }];
+}
+
+export function generateMetadata({
+  params
+}: {
+  params: { locale: Locale };
+}): Metadata {
+  const dict = getDictionary(params.locale);
+  return {
+    title: dict.home.metaTitle,
+    description: dict.home.metaDescription,
+    alternates: {
+      canonical: `/${params.locale}`,
+      languages: { nl: "/nl", en: "/en" }
+    },
+    openGraph: {
+      title: dict.home.metaTitle,
+      description: dict.home.metaDescription,
+      url: `/${params.locale}`,
+      images: ["/images/moraira-1.jpg"],
+      locale: params.locale === "nl" ? "nl_NL" : "en_US"
+    }
+  };
 }
 
 export default function HomePage({
