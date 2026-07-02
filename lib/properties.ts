@@ -108,8 +108,8 @@ export const properties: Property[] = [
     bedrooms: 2,
     bathrooms: 1,
     pricePerNight: 115,
-    heroImage: "/images/denia-1.jpg",
-    images: Array.from({ length: 24 }, (_, i) => `/images/denia-${i + 1}.jpg`),
+    heroImage: "/images/denia-1.avif",
+    images: Array.from({ length: 24 }, (_, i) => `/images/denia-${i + 1}.avif`),
     amenities: {
       nl: [
         "Vlak bij strand (90 m)",
