@@ -21,7 +21,6 @@ export default function Header({ locale }: { locale: Locale }) {
           </span>
         </Link>
         <nav className="flex items-center gap-6 text-sm text-charcoal">
-          <Link href={`/${locale}#properties`}>{dict.nav.properties}</Link>
           <div className="flex items-center gap-1">
             {LOCALES.map((l) => (
               <Link
