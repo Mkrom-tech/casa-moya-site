@@ -113,7 +113,7 @@ export default function PropertyPage({
       <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-charcoal/10">
         <Image
           src={property.heroImage}
-          alt={`${property.name} — ${property.location}`}
+          alt={`${property.name} - ${property.location}`}
           fill
           priority
           sizes="(min-width: 1024px) 896px, 100vw"

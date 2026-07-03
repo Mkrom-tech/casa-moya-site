@@ -104,10 +104,10 @@ export const properties: Property[] = [
     },
     metaDescription: {
       nl: "Vakantievilla in Moraira/Teulada met privézwembad, tuin en zeezicht. 4 gasten, 2 slaapkamers, 2,1 km van het strand. Boek rechtstreeks bij de eigenaar, geen commissie of boekingskosten.",
-      en: "Vacation villa in Moraira/Teulada with private pool, garden and sea views. Sleeps 4, 2 bedrooms, 2.1 km from the beach. Book direct with the owner — no commission, no booking fees.",
+      en: "Vacation villa in Moraira/Teulada with private pool, garden and sea views. Sleeps 4, 2 bedrooms, 2.1 km from the beach. Book direct with the owner, no commission, no booking fees.",
       es: "Villa de vacaciones en Moraira/Teulada con piscina privada, jardín y vistas al mar. 4 huéspedes, 2 dormitorios, a 2,1 km de la playa. Reserva directamente con el propietario, sin comisiones ni gastos de reserva.",
       it: "Villa vacanze a Moraira/Teulada con piscina privata, giardino e vista mare. 4 ospiti, 2 camere da letto, a 2,1 km dalla spiaggia. Prenota direttamente con il proprietario, senza commissioni né spese di prenotazione.",
-      de: "Ferienvilla in Moraira/Teulada mit privatem Pool, Garten und Meerblick. 4 Gäste, 2 Schlafzimmer, 2,1 km vom Strand entfernt. Direkt beim Eigentümer buchen — keine Provision, keine Buchungsgebühren."
+      de: "Ferienvilla in Moraira/Teulada mit privatem Pool, Garten und Meerblick. 4 Gäste, 2 Schlafzimmer, 2,1 km vom Strand entfernt. Direkt beim Eigentümer buchen, keine Provision, keine Buchungsgebühren."
     },
     icalUrls: [
       "https://ical.booking.com/v1/export?t=29a54afe-d090-4eec-8193-755dd760fa8c",
@@ -187,7 +187,7 @@ export const properties: Property[] = [
     },
     metaDescription: {
       nl: "Appartement met zeezicht in Denia, 90 meter van het strand van Les Deveses. 4 gasten, 2 slaapkamers, gratis parkeren. Boek rechtstreeks bij de eigenaar, geen commissie.",
-      en: "Sea-view apartment in Denia, just 90 metres from Les Deveses beach. Sleeps 4, 2 bedrooms, free parking. Book direct with the owner — no commission.",
+      en: "Sea-view apartment in Denia, just 90 metres from Les Deveses beach. Sleeps 4, 2 bedrooms, free parking. Book direct with the owner, no commission.",
       es: "Apartamento con vistas al mar en Denia, a 90 metros de la playa de Les Deveses. 4 huéspedes, 2 dormitorios, aparcamiento gratuito. Reserva directamente con el propietario, sin comisiones.",
       it: "Appartamento vista mare a Denia, a 90 metri dalla spiaggia di Les Deveses. 4 ospiti, 2 camere da letto, parcheggio gratuito. Prenota direttamente con il proprietario, senza commissioni.",
       de: "Wohnung mit Meerblick in Denia, 90 Meter vom Strand von Les Deveses entfernt. 4 Gäste, 2 Schlafzimmer, kostenlose Parkplätze. Direkt beim Eigentümer buchen, keine Provision."

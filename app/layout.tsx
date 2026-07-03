@@ -15,11 +15,11 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-4S62ZMPF1N";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casa-moya.com"),
   title: {
-    default: "Casa Moya — Vakantiehuizen Moraira & Denia, boek direct",
+    default: "Casa Moya - Vakantiehuizen Moraira & Denia, boek direct",
     template: "%s | Casa Moya"
   },
   description:
-    "Boek rechtstreeks — Casa Moya Villa Moraira en Moya Apartment Denia, Costa Blanca. Geen commissie, altijd de beste prijs.",
+    "Boek rechtstreeks: Casa Moya Villa Moraira en Moya Apartment Denia, Costa Blanca. Geen commissie, altijd de beste prijs.",
   icons: {
     icon: "/favicon.svg"
   },

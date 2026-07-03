@@ -73,9 +73,9 @@ export default function HomePage({
             <Link
               key={property.slug}
               href={`/${params.locale}/properties/${property.slug}`}
-              className="flex aspect-[16/3] w-full items-center gap-6 overflow-hidden rounded-2xl border-2 border-gold bg-white p-6 transition hover:shadow-lg"
+              className="flex w-full flex-col gap-4 rounded-2xl border-2 border-gold bg-white p-6 transition hover:shadow-lg sm:min-h-[140px] sm:flex-row sm:items-center sm:gap-6"
             >
-              <div className="shrink-0 text-center">
+              <div className="shrink-0 text-center sm:text-left">
                 <div className="font-display text-2xl text-ink">
                   {reviews.aggregateRating.ratingValue}/{reviews.aggregateRating.bestRating}
                 </div>
@@ -87,7 +87,7 @@ export default function HomePage({
               <blockquote className="flex-1 text-sm italic text-charcoal/80 sm:text-base">
                 &ldquo;{quote.text}&rdquo;
                 <footer className="mt-1 text-xs not-italic text-charcoal/50">
-                  — {quote.author}, {property.name}
+                  - {quote.author}, {property.name}
                 </footer>
               </blockquote>
             </Link>
@@ -102,15 +102,15 @@ export default function HomePage({
           </h2>
           <div className="mt-8 grid gap-8 sm:grid-cols-3">
             <div className="text-center">
-              <h3 className="font-display text-lg text-ink">{dict.homeExtra.why1Title}</h3>
+              <h3 className="font-display text-lg font-bold text-ink">{dict.homeExtra.why1Title}</h3>
               <p className="mt-2 text-sm text-charcoal/70">{dict.homeExtra.why1Body}</p>
             </div>
             <div className="text-center">
-              <h3 className="font-display text-lg text-ink">{dict.homeExtra.why2Title}</h3>
+              <h3 className="font-display text-lg font-bold text-ink">{dict.homeExtra.why2Title}</h3>
               <p className="mt-2 text-sm text-charcoal/70">{dict.homeExtra.why2Body}</p>
             </div>
             <div className="text-center">
-              <h3 className="font-display text-lg text-ink">{dict.homeExtra.why3Title}</h3>
+              <h3 className="font-display text-lg font-bold text-ink">{dict.homeExtra.why3Title}</h3>
               <p className="mt-2 text-sm text-charcoal/70">{dict.homeExtra.why3Body}</p>
             </div>
           </div>

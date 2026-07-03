@@ -47,7 +47,7 @@ export async function POST(req: Request) {
         from: FROM_EMAIL,
         to: NOTIFY_EMAIL,
         replyTo: body.email,
-        subject: `Nieuwe boekingsaanvraag — ${body.propertyName || "Casa Moya"}`,
+        subject: `Nieuwe boekingsaanvraag: ${body.propertyName || "Casa Moya"}`,
         text: [
           `Woning: ${body.propertyName || body.propertySlug}`,
           `Naam: ${body.name}`,

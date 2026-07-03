@@ -52,7 +52,7 @@ export default function PhotoGallery({
           >
             <Image
               src={img}
-              alt={`${alt} — ${i + 2}`}
+              alt={`${alt} - ${i + 2}`}
               fill
               loading="lazy"
               sizes="(min-width: 1024px) 20vw, (min-width: 640px) 25vw, 33vw"
@@ -88,7 +88,7 @@ export default function PhotoGallery({
           </button>
           <img
             src={rest[openIndex]}
-            alt={`${alt} — ${openIndex + 2}`}
+            alt={`${alt} - ${openIndex + 2}`}
             className="max-h-[85vh] max-w-[90vw] rounded-lg object-contain"
             onClick={(e) => e.stopPropagation()}
           />

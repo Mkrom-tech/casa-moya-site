@@ -26,7 +26,7 @@ export default function Testimonials({
           >
             <p>&ldquo;{t.text}&rdquo;</p>
             <footer className="mt-3 text-xs text-charcoal/50">
-              — {t.author}, {sourceLabel} {t.source}
+              - {t.author}, {sourceLabel} {t.source}
             </footer>
           </blockquote>
         ))}

@@ -92,7 +92,7 @@ export async function POST(req: Request) {
         from: FROM_EMAIL,
         to: NOTIFY_EMAIL,
         replyTo: String(email),
-        subject: `Gastregistratie — ${propertySlug}`,
+        subject: `Gastregistratie: ${propertySlug}`,
         text: [
           `Woning: ${propertySlug}`,
           `Naam: ${name}`,

@@ -36,18 +36,18 @@ export const areaGuides: AreaGuide[] = [
     relatedPropertySlug: "casa-moya-moraira",
     heroImage: "/images/moraira-2.jpg",
     title: {
-      nl: "Vakantievilla huren in Moraira — met privézwembad en zeezicht",
-      en: "Villa Rental in Moraira — Private Pool and Sea Views",
-      es: "Villa en alquiler en Moraira — piscina privada y vistas al mar",
-      it: "Villa in affitto a Moraira — piscina privata e vista mare",
-      de: "Villa mieten in Moraira — mit Privatpool und Meerblick"
+      nl: "Vakantievilla huren in Moraira - met privézwembad en zeezicht",
+      en: "Villa Rental in Moraira - Private Pool and Sea Views",
+      es: "Villa en alquiler en Moraira - piscina privada y vistas al mar",
+      it: "Villa in affitto a Moraira - piscina privata e vista mare",
+      de: "Villa mieten in Moraira - mit Privatpool und Meerblick"
     },
     metaTitle: {
-      nl: "Vakantievilla Moraira huren | Privézwembad & zeezicht — Casa Moya",
-      en: "Moraira Villa Rental | Private Pool & Sea View — Casa Moya",
-      es: "Villa en alquiler en Moraira | Piscina privada y vistas al mar — Casa Moya",
-      it: "Villa in affitto a Moraira | Piscina privata e vista mare — Casa Moya",
-      de: "Villa mieten in Moraira | Privatpool und Meerblick — Casa Moya"
+      nl: "Vakantievilla Moraira huren | Privézwembad & zeezicht - Casa Moya",
+      en: "Moraira Villa Rental | Private Pool & Sea View - Casa Moya",
+      es: "Villa en alquiler en Moraira | Piscina privada y vistas al mar - Casa Moya",
+      it: "Villa in affitto a Moraira | Piscina privata e vista mare - Casa Moya",
+      de: "Villa mieten in Moraira | Privatpool und Meerblick - Casa Moya"
     },
     metaDescription: {
       nl: "Op zoek naar een vakantievilla in Moraira met privézwembad en zeezicht? Casa Moya ligt 2,1 km van het strand, in een rustige, kindvriendelijke omgeving. Boek rechtstreeks, zonder commissie.",
@@ -57,11 +57,11 @@ export const areaGuides: AreaGuide[] = [
       de: "Suchen Sie eine Villa in Moraira mit Privatpool und Meerblick? Casa Moya liegt 2,1 km vom Strand entfernt, in ruhiger, familienfreundlicher Lage. Direkt buchen, ohne Provision."
     },
     intro: {
-      nl: "Moraira is een van de rustigste en meest gewilde badplaatsen aan de Costa Blanca — een klein, veilig dorp met een goed te belopen centrum, mooie baaien en een boulevard langs zee. Casa Moya is een vakantievilla met privézwembad, tuin en zeezicht, 2,1 km van het strand en 3,2 km van het centrum.",
-      en: "Moraira is one of the quietest and most sought-after resort towns on the Costa Blanca — a small, safe village with a walkable centre, beautiful coves and a seafront promenade. Casa Moya is a villa with a private pool, garden and sea views, 2.1 km from the beach and 3.2 km from the centre.",
-      es: "Moraira es uno de los pueblos costeros más tranquilos y solicitados de la Costa Blanca — un pueblo pequeño y seguro, con un centro accesible a pie, calas preciosas y un paseo marítimo. Casa Moya es una villa con piscina privada, jardín y vistas al mar, a 2,1 km de la playa y 3,2 km del centro.",
-      it: "Moraira è una delle località costiere più tranquille e ricercate della Costa Blanca — un piccolo borgo sicuro, con un centro percorribile a piedi, calette bellissime e una passeggiata lungomare. Casa Moya è una villa con piscina privata, giardino e vista mare, a 2,1 km dalla spiaggia e 3,2 km dal centro.",
-      de: "Moraira ist einer der ruhigsten und beliebtesten Ferienorte an der Costa Blanca — ein kleines, sicheres Dorf mit einem zu Fuß erreichbaren Zentrum, wunderschönen Buchten und einer Strandpromenade. Casa Moya ist eine Villa mit Privatpool, Garten und Meerblick, 2,1 km vom Strand und 3,2 km vom Zentrum entfernt."
+      nl: "Moraira is een van de rustigste en meest gewilde badplaatsen aan de Costa Blanca - een klein, veilig dorp met een goed te belopen centrum, mooie baaien en een boulevard langs zee. Casa Moya is een vakantievilla met privézwembad, tuin en zeezicht, 2,1 km van het strand en 3,2 km van het centrum.",
+      en: "Moraira is one of the quietest and most sought-after resort towns on the Costa Blanca - a small, safe village with a walkable centre, beautiful coves and a seafront promenade. Casa Moya is a villa with a private pool, garden and sea views, 2.1 km from the beach and 3.2 km from the centre.",
+      es: "Moraira es uno de los pueblos costeros más tranquilos y solicitados de la Costa Blanca - un pueblo pequeño y seguro, con un centro accesible a pie, calas preciosas y un paseo marítimo. Casa Moya es una villa con piscina privada, jardín y vistas al mar, a 2,1 km de la playa y 3,2 km del centro.",
+      it: "Moraira è una delle località costiere più tranquille e ricercate della Costa Blanca - un piccolo borgo sicuro, con un centro percorribile a piedi, calette bellissime e una passeggiata lungomare. Casa Moya è una villa con piscina privata, giardino e vista mare, a 2,1 km dalla spiaggia e 3,2 km dal centro.",
+      de: "Moraira ist einer der ruhigsten und beliebtesten Ferienorte an der Costa Blanca - ein kleines, sicheres Dorf mit einem zu Fuß erreichbaren Zentrum, wunderschönen Buchten und einer Strandpromenade. Casa Moya ist eine Villa mit Privatpool, Garten und Meerblick, 2,1 km vom Strand und 3,2 km vom Zentrum entfernt."
     },
     sections: {
       nl: [
@@ -71,7 +71,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Geschikt voor gezinnen",
-          body: "Moraira is klein, veilig en goed te voet te doen — ideaal voor gezinnen met kinderen. De rustige baaien, de boulevard en de wekelijkse markt maken het een ontspannen bestemming zonder de drukte van grotere kustplaatsen."
+          body: "Moraira is klein, veilig en goed te voet te doen - ideaal voor gezinnen met kinderen. De rustige baaien, de boulevard en de wekelijkse markt maken het een ontspannen bestemming zonder de drukte van grotere kustplaatsen."
         },
         {
           heading: "Beste periode om te boeken",
@@ -79,7 +79,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Waarom rechtstreeks boeken bij Casa Moya",
-          body: "Rechtstreeks boeken betekent geen commissie voor Airbnb of Booking.com, persoonlijk contact met de eigenaar, en altijd de beste directe prijs — dezelfde villa, zonder de opslag."
+          body: "Rechtstreeks boeken betekent geen commissie voor Airbnb of Booking.com, persoonlijk contact met de eigenaar, en altijd de beste directe prijs - dezelfde villa, zonder de opslag."
         }
       ],
       en: [
@@ -89,7 +89,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Good for families",
-          body: "Moraira is small, safe and easy to get around on foot — ideal for families with children. The calm coves, the promenade and the weekly market make it a relaxed destination without the crowds of bigger coastal towns."
+          body: "Moraira is small, safe and easy to get around on foot - ideal for families with children. The calm coves, the promenade and the weekly market make it a relaxed destination without the crowds of bigger coastal towns."
         },
         {
           heading: "Best time to book",
@@ -107,7 +107,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Ideal para familias",
-          body: "Moraira es pequeño, seguro y fácil de recorrer a pie — ideal para familias con niños. Las calas tranquilas, el paseo marítimo y el mercado semanal lo convierten en un destino relajado, sin las aglomeraciones de las localidades costeras más grandes."
+          body: "Moraira es pequeño, seguro y fácil de recorrer a pie - ideal para familias con niños. Las calas tranquilas, el paseo marítimo y el mercado semanal lo convierten en un destino relajado, sin las aglomeraciones de las localidades costeras más grandes."
         },
         {
           heading: "Mejor época para reservar",
@@ -125,7 +125,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Ideale per le famiglie",
-          body: "Moraira è piccola, sicura e facile da girare a piedi — ideale per famiglie con bambini. Le calette tranquille, la passeggiata e il mercato settimanale la rendono una destinazione rilassata, senza la folla delle località costiere più grandi."
+          body: "Moraira è piccola, sicura e facile da girare a piedi - ideale per famiglie con bambini. Le calette tranquille, la passeggiata e il mercato settimanale la rendono una destinazione rilassata, senza la folla delle località costiere più grandi."
         },
         {
           heading: "Il momento migliore per prenotare",
@@ -143,7 +143,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Gut für Familien",
-          body: "Moraira ist klein, sicher und gut zu Fuß erkundbar — ideal für Familien mit Kindern. Die ruhigen Buchten, die Promenade und der Wochenmarkt machen es zu einem entspannten Reiseziel ohne den Trubel größerer Küstenorte."
+          body: "Moraira ist klein, sicher und gut zu Fuß erkundbar - ideal für Familien mit Kindern. Die ruhigen Buchten, die Promenade und der Wochenmarkt machen es zu einem entspannten Reiseziel ohne den Trubel größerer Küstenorte."
         },
         {
           heading: "Beste Buchungszeit",
@@ -159,31 +159,31 @@ export const areaGuides: AreaGuide[] = [
       nl: [
         { q: "Hoe ver is het strand vanaf de villa?", a: "Het dichtstbijzijnde strand ligt op 2,1 km, ongeveer 5 minuten met de auto of een korte fietstocht." },
         { q: "Is er gratis parkeren in Moraira?", a: "Ja, bij de villa zelf en in het dorp is volop gratis parkeren, onder andere bij het gemeentehuis vlak bij het centrum." },
-        { q: "Is Moraira geschikt voor kinderen?", a: "Zeker — het dorp is klein, veilig en goed te voet te doen, met rustige familiestranden zoals L'Ampolla." },
+        { q: "Is Moraira geschikt voor kinderen?", a: "Zeker - het dorp is klein, veilig en goed te voet te doen, met rustige familiestranden zoals L'Ampolla." },
         { q: "Wat is de beste periode om te boeken?", a: "Het zwembad is open van april tot oktober. Voor de beste beschikbaarheid en prijs boek je het liefst ruim vóór het hoogseizoen (juli-augustus)." }
       ],
       en: [
         { q: "How far is the beach from the villa?", a: "The nearest beach is 2.1 km away, about a 5-minute drive or a short bike ride." },
-        { q: "Is there free parking in Moraira?", a: "Yes — free parking at the villa itself, plus plenty of free parking around the village, including near the town hall close to the centre." },
-        { q: "Is Moraira good for children?", a: "Yes — the village is small, safe and easy to explore on foot, with calm family beaches like L'Ampolla." },
+        { q: "Is there free parking in Moraira?", a: "Yes - free parking at the villa itself, plus plenty of free parking around the village, including near the town hall close to the centre." },
+        { q: "Is Moraira good for children?", a: "Yes - the village is small, safe and easy to explore on foot, with calm family beaches like L'Ampolla." },
         { q: "What's the best time to book?", a: "The pool is open April through October. For the best availability and price, book well ahead of high season (July-August)." }
       ],
       es: [
         { q: "¿A qué distancia está la playa de la villa?", a: "La playa más cercana está a 2,1 km, unos 5 minutos en coche o un corto trayecto en bicicleta." },
-        { q: "¿Hay aparcamiento gratuito en Moraira?", a: "Sí — aparcamiento gratuito en la propia villa, además de mucho aparcamiento gratuito por el pueblo, incluido junto al ayuntamiento cerca del centro." },
-        { q: "¿Es Moraira adecuado para niños?", a: "Sí — el pueblo es pequeño, seguro y fácil de recorrer a pie, con playas familiares tranquilas como L'Ampolla." },
+        { q: "¿Hay aparcamiento gratuito en Moraira?", a: "Sí - aparcamiento gratuito en la propia villa, además de mucho aparcamiento gratuito por el pueblo, incluido junto al ayuntamiento cerca del centro." },
+        { q: "¿Es Moraira adecuado para niños?", a: "Sí - el pueblo es pequeño, seguro y fácil de recorrer a pie, con playas familiares tranquilas como L'Ampolla." },
         { q: "¿Cuál es la mejor época para reservar?", a: "La piscina está disponible de abril a octubre. Para la mejor disponibilidad y precio, reserva con antelación antes de la temporada alta (julio-agosto)." }
       ],
       it: [
         { q: "Quanto dista la spiaggia dalla villa?", a: "La spiaggia più vicina è a 2,1 km, circa 5 minuti in auto o una breve pedalata." },
-        { q: "C'è parcheggio gratuito a Moraira?", a: "Sì — parcheggio gratuito presso la villa stessa, oltre a molto parcheggio gratuito in paese, anche vicino al municipio nei pressi del centro." },
-        { q: "Moraira è adatta ai bambini?", a: "Sì — il paese è piccolo, sicuro e facile da girare a piedi, con spiagge tranquille e familiari come L'Ampolla." },
+        { q: "C'è parcheggio gratuito a Moraira?", a: "Sì - parcheggio gratuito presso la villa stessa, oltre a molto parcheggio gratuito in paese, anche vicino al municipio nei pressi del centro." },
+        { q: "Moraira è adatta ai bambini?", a: "Sì - il paese è piccolo, sicuro e facile da girare a piedi, con spiagge tranquille e familiari come L'Ampolla." },
         { q: "Qual è il momento migliore per prenotare?", a: "La piscina è aperta da aprile a ottobre. Per la migliore disponibilità e il miglior prezzo, prenota con largo anticipo rispetto all'alta stagione (luglio-agosto)." }
       ],
       de: [
         { q: "Wie weit ist der Strand von der Villa entfernt?", a: "Der nächste Strand liegt 2,1 km entfernt, etwa 5 Minuten mit dem Auto oder eine kurze Fahrradfahrt." },
-        { q: "Gibt es kostenlose Parkplätze in Moraira?", a: "Ja — kostenlose Parkplätze direkt bei der Villa sowie viele kostenlose Parkmöglichkeiten im Dorf, unter anderem beim Rathaus nahe dem Zentrum." },
-        { q: "Ist Moraira gut für Kinder geeignet?", a: "Ja — das Dorf ist klein, sicher und gut zu Fuß erkundbar, mit ruhigen Familienstränden wie L'Ampolla." },
+        { q: "Gibt es kostenlose Parkplätze in Moraira?", a: "Ja - kostenlose Parkplätze direkt bei der Villa sowie viele kostenlose Parkmöglichkeiten im Dorf, unter anderem beim Rathaus nahe dem Zentrum." },
+        { q: "Ist Moraira gut für Kinder geeignet?", a: "Ja - das Dorf ist klein, sicher und gut zu Fuß erkundbar, mit ruhigen Familienstränden wie L'Ampolla." },
         { q: "Was ist die beste Buchungszeit?", a: "Der Pool ist von April bis Oktober geöffnet. Für die beste Verfügbarkeit und den besten Preis buchen Sie am besten weit vor der Hochsaison (Juli-August)." }
       ]
     }
@@ -200,18 +200,18 @@ export const areaGuides: AreaGuide[] = [
     relatedPropertySlug: "moya-apartment-denia",
     heroImage: "/images/denia-2.avif",
     title: {
-      nl: "Zeezicht appartement huren in Denia — aan het strand van Les Deveses",
-      en: "Sea View Apartment Rental in Denia — On Les Deveses Beach",
-      es: "Apartamento con vistas al mar en alquiler en Denia — en la playa de Les Deveses",
-      it: "Appartamento vista mare in affitto a Denia — sulla spiaggia di Les Deveses",
-      de: "Wohnung mit Meerblick mieten in Denia — am Strand von Les Deveses"
+      nl: "Zeezicht appartement huren in Denia - aan het strand van Les Deveses",
+      en: "Sea View Apartment Rental in Denia - On Les Deveses Beach",
+      es: "Apartamento con vistas al mar en alquiler en Denia - en la playa de Les Deveses",
+      it: "Appartamento vista mare in affitto a Denia - sulla spiaggia di Les Deveses",
+      de: "Wohnung mit Meerblick mieten in Denia - am Strand von Les Deveses"
     },
     metaTitle: {
-      nl: "Zeezicht appartement Denia huren | Strand Les Deveses — Casa Moya",
-      en: "Denia Sea View Apartment Rental | Les Deveses Beach — Casa Moya",
-      es: "Apartamento con vistas al mar en Denia | Playa Les Deveses — Casa Moya",
-      it: "Appartamento vista mare a Denia | Spiaggia Les Deveses — Casa Moya",
-      de: "Wohnung mit Meerblick in Denia | Strand Les Deveses — Casa Moya"
+      nl: "Zeezicht appartement Denia huren | Strand Les Deveses - Casa Moya",
+      en: "Denia Sea View Apartment Rental | Les Deveses Beach - Casa Moya",
+      es: "Apartamento con vistas al mar en Denia | Playa Les Deveses - Casa Moya",
+      it: "Appartamento vista mare a Denia | Spiaggia Les Deveses - Casa Moya",
+      de: "Wohnung mit Meerblick in Denia | Strand Les Deveses - Casa Moya"
     },
     metaDescription: {
       nl: "Appartement met zeezicht huren in Denia, 90 meter van het rustige strand Les Deveses. Gratis parkeren, ideaal voor gezinnen. Boek rechtstreeks bij Casa Moya, zonder commissie.",
@@ -221,11 +221,11 @@ export const areaGuides: AreaGuide[] = [
       de: "Mieten Sie eine Wohnung mit Meerblick in Denia, 90 Meter vom ruhigen Strand Les Deveses entfernt. Kostenlose Parkplätze, ideal für Familien. Direkt bei Casa Moya buchen, ohne Provision."
     },
     intro: {
-      nl: "Les Deveses is het rustigste strand van Denia — fijn zand, kalm water en volop ruimte, zonder de drukte van de stadsstranden. Casa Moya Seaview Apartment Denia ligt op 90 meter van dit strand, met eigen terras en balkon met zeezicht.",
-      en: "Les Deveses is Denia's quietest beach — fine sand, calm water and plenty of space, without the crowds of the city beaches. Casa Moya Seaview Apartment Denia is 90 metres from this beach, with its own terrace and sea-view balcony.",
-      es: "Les Deveses es la playa más tranquila de Denia — arena fina, aguas calmas y mucho espacio, sin las aglomeraciones de las playas de la ciudad. Casa Moya Seaview Apartment Denia está a 90 metros de esta playa, con terraza propia y balcón con vistas al mar.",
-      it: "Les Deveses è la spiaggia più tranquilla di Denia — sabbia fine, acque calme e molto spazio, senza la folla delle spiagge cittadine. Casa Moya Seaview Apartment Denia si trova a 90 metri da questa spiaggia, con terrazza propria e balcone vista mare.",
-      de: "Les Deveses ist der ruhigste Strand von Denia — feiner Sand, ruhiges Wasser und viel Platz, ohne den Trubel der Stadtstrände. Casa Moya Seaview Apartment Denia liegt 90 Meter von diesem Strand entfernt, mit eigener Terrasse und Balkon mit Meerblick."
+      nl: "Les Deveses is het rustigste strand van Denia - fijn zand, kalm water en volop ruimte, zonder de drukte van de stadsstranden. Casa Moya Seaview Apartment Denia ligt op 90 meter van dit strand, met eigen terras en balkon met zeezicht.",
+      en: "Les Deveses is Denia's quietest beach - fine sand, calm water and plenty of space, without the crowds of the city beaches. Casa Moya Seaview Apartment Denia is 90 metres from this beach, with its own terrace and sea-view balcony.",
+      es: "Les Deveses es la playa más tranquila de Denia - arena fina, aguas calmas y mucho espacio, sin las aglomeraciones de las playas de la ciudad. Casa Moya Seaview Apartment Denia está a 90 metros de esta playa, con terraza propia y balcón con vistas al mar.",
+      it: "Les Deveses è la spiaggia più tranquilla di Denia - sabbia fine, acque calme e molto spazio, senza la folla delle spiagge cittadine. Casa Moya Seaview Apartment Denia si trova a 90 metri da questa spiaggia, con terrazza propria e balcone vista mare.",
+      de: "Les Deveses ist der ruhigste Strand von Denia - feiner Sand, ruhiges Wasser und viel Platz, ohne den Trubel der Stadtstrände. Casa Moya Seaview Apartment Denia liegt 90 Meter von diesem Strand entfernt, mit eigener Terrasse und Balkon mit Meerblick."
     },
     sections: {
       nl: [
@@ -235,7 +235,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Geschikt voor gezinnen",
-          body: "Het strand heeft kalm, ondiep water, houten loopplanken, een EHBO-post van het Rode Kruis en toezicht — ideaal voor gezinnen met jonge kinderen. 's Zomers ligt er ook een opblaasbaar speelplatform in zee."
+          body: "Het strand heeft kalm, ondiep water, houten loopplanken, een EHBO-post van het Rode Kruis en toezicht - ideaal voor gezinnen met jonge kinderen. 's Zomers ligt er ook een opblaasbaar speelplatform in zee."
         },
         {
           heading: "Beste periode om te boeken",
@@ -253,7 +253,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Good for families",
-          body: "The beach has calm, shallow water, wooden boardwalks, a Red Cross first-aid post and lifeguard cover — ideal for families with young children. In summer there's also an inflatable play platform in the sea."
+          body: "The beach has calm, shallow water, wooden boardwalks, a Red Cross first-aid post and lifeguard cover - ideal for families with young children. In summer there's also an inflatable play platform in the sea."
         },
         {
           heading: "Best time to book",
@@ -271,7 +271,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Ideal para familias",
-          body: "La playa tiene aguas calmas y poco profundas, pasarelas de madera, un puesto de primeros auxilios de Cruz Roja y vigilancia — ideal para familias con niños pequeños. En verano también hay una plataforma inflable en el mar."
+          body: "La playa tiene aguas calmas y poco profundas, pasarelas de madera, un puesto de primeros auxilios de Cruz Roja y vigilancia - ideal para familias con niños pequeños. En verano también hay una plataforma inflable en el mar."
         },
         {
           heading: "Mejor época para reservar",
@@ -289,7 +289,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Ideale per le famiglie",
-          body: "La spiaggia ha acque calme e poco profonde, passerelle in legno, un posto di primo soccorso della Croce Rossa e sorveglianza — ideale per famiglie con bambini piccoli. In estate c'è anche una piattaforma gonfiabile in mare."
+          body: "La spiaggia ha acque calme e poco profonde, passerelle in legno, un posto di primo soccorso della Croce Rossa e sorveglianza - ideale per famiglie con bambini piccoli. In estate c'è anche una piattaforma gonfiabile in mare."
         },
         {
           heading: "Il momento migliore per prenotare",
@@ -307,7 +307,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Gut für Familien",
-          body: "Der Strand hat ruhiges, flaches Wasser, Holzstege, eine Erste-Hilfe-Station des Roten Kreuzes und Aufsicht — ideal für Familien mit kleinen Kindern. Im Sommer gibt es zudem eine aufblasbare Spielplattform im Meer."
+          body: "Der Strand hat ruhiges, flaches Wasser, Holzstege, eine Erste-Hilfe-Station des Roten Kreuzes und Aufsicht - ideal für Familien mit kleinen Kindern. Im Sommer gibt es zudem eine aufblasbare Spielplattform im Meer."
         },
         {
           heading: "Beste Buchungszeit",
@@ -323,31 +323,31 @@ export const areaGuides: AreaGuide[] = [
       nl: [
         { q: "Hoe ver is het strand vanaf het appartement?", a: "Het strand van Les Deveses ligt op 90 meter, letterlijk om de hoek." },
         { q: "Is er parkeren bij het appartement?", a: "Ja, er is gratis parkeren op eigen terrein en volop gratis straatparkeren rond het strand." },
-        { q: "Is Les Deveses geschikt voor kinderen?", a: "Ja — kalm water, een opblaasbaar speelplatform in de zomer en toezicht op het strand maken het een van de meest gezinsvriendelijke stranden van Denia." },
+        { q: "Is Les Deveses geschikt voor kinderen?", a: "Ja - kalm water, een opblaasbaar speelplatform in de zomer en toezicht op het strand maken het een van de meest gezinsvriendelijke stranden van Denia." },
         { q: "Hoe ver is het centrum van Denia?", a: "Ongeveer 10 km; in de zomer rijdt er een bus tussen Les Deveses en het centrum." }
       ],
       en: [
         { q: "How far is the beach from the apartment?", a: "Les Deveses beach is 90 metres away, literally around the corner." },
-        { q: "Is there parking at the apartment?", a: "Yes — free on-site parking, plus plenty of free street parking around the beach." },
-        { q: "Is Les Deveses good for children?", a: "Yes — calm water, a summer inflatable play platform and lifeguard cover make it one of Denia's most family-friendly beaches." },
+        { q: "Is there parking at the apartment?", a: "Yes - free on-site parking, plus plenty of free street parking around the beach." },
+        { q: "Is Les Deveses good for children?", a: "Yes - calm water, a summer inflatable play platform and lifeguard cover make it one of Denia's most family-friendly beaches." },
         { q: "How far is Denia's town centre?", a: "About 10 km; a summer bus connects Les Deveses with the centre." }
       ],
       es: [
         { q: "¿A qué distancia está la playa del apartamento?", a: "La playa de Les Deveses está a 90 metros, literalmente a la vuelta de la esquina." },
-        { q: "¿Hay aparcamiento en el apartamento?", a: "Sí — aparcamiento gratuito en la propia propiedad, además de mucho aparcamiento gratuito en la calle alrededor de la playa." },
-        { q: "¿Es Les Deveses adecuada para niños?", a: "Sí — aguas calmas, una plataforma inflable en verano y vigilancia hacen que sea una de las playas más familiares de Denia." },
+        { q: "¿Hay aparcamiento en el apartamento?", a: "Sí - aparcamiento gratuito en la propia propiedad, además de mucho aparcamiento gratuito en la calle alrededor de la playa." },
+        { q: "¿Es Les Deveses adecuada para niños?", a: "Sí - aguas calmas, una plataforma inflable en verano y vigilancia hacen que sea una de las playas más familiares de Denia." },
         { q: "¿A qué distancia está el centro de Denia?", a: "Unos 10 km; en verano un autobús conecta Les Deveses con el centro." }
       ],
       it: [
         { q: "Quanto dista la spiaggia dall'appartamento?", a: "La spiaggia di Les Deveses è a 90 metri, letteralmente dietro l'angolo." },
-        { q: "C'è parcheggio presso l'appartamento?", a: "Sì — parcheggio gratuito in loco, oltre a molto parcheggio gratuito in strada intorno alla spiaggia." },
-        { q: "Les Deveses è adatta ai bambini?", a: "Sì — acque calme, una piattaforma gonfiabile estiva e sorveglianza la rendono una delle spiagge più adatte alle famiglie di Denia." },
+        { q: "C'è parcheggio presso l'appartamento?", a: "Sì - parcheggio gratuito in loco, oltre a molto parcheggio gratuito in strada intorno alla spiaggia." },
+        { q: "Les Deveses è adatta ai bambini?", a: "Sì - acque calme, una piattaforma gonfiabile estiva e sorveglianza la rendono una delle spiagge più adatte alle famiglie di Denia." },
         { q: "Quanto dista il centro di Denia?", a: "Circa 10 km; in estate un autobus collega Les Deveses al centro." }
       ],
       de: [
         { q: "Wie weit ist der Strand von der Wohnung entfernt?", a: "Der Strand von Les Deveses liegt 90 Meter entfernt, buchstäblich um die Ecke." },
-        { q: "Gibt es Parkplätze bei der Wohnung?", a: "Ja — kostenlose Parkplätze auf dem eigenen Grundstück sowie viele kostenlose Straßenparkplätze rund um den Strand." },
-        { q: "Ist Les Deveses gut für Kinder geeignet?", a: "Ja — ruhiges Wasser, eine sommerliche aufblasbare Spielplattform und Aufsicht machen ihn zu einem der familienfreundlichsten Strände Denias." },
+        { q: "Gibt es Parkplätze bei der Wohnung?", a: "Ja - kostenlose Parkplätze auf dem eigenen Grundstück sowie viele kostenlose Straßenparkplätze rund um den Strand." },
+        { q: "Ist Les Deveses gut für Kinder geeignet?", a: "Ja - ruhiges Wasser, eine sommerliche aufblasbare Spielplattform und Aufsicht machen ihn zu einem der familienfreundlichsten Strände Denias." },
         { q: "Wie weit ist das Zentrum von Denia entfernt?", a: "Etwa 10 km; im Sommer verbindet ein Bus Les Deveses mit dem Zentrum." }
       ]
     }
