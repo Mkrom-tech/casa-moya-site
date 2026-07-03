@@ -198,7 +198,7 @@ export const areaGuides: AreaGuide[] = [
       de: "meerblick-wohnung-denia"
     },
     relatedPropertySlug: "moya-apartment-denia",
-    heroImage: "/images/denia-17.avif",
+    heroImage: "/images/denia-18.avif",
     title: {
       nl: "Zeezicht appartement huren in Denia - aan het strand van Les Deveses",
       en: "Sea View Apartment Rental in Denia - On Les Deveses Beach",
