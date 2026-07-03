@@ -31,7 +31,10 @@ export default function PropertyCard({
           {dict.property.bedrooms}
         </p>
         <p className="pt-1 font-medium text-terracotta">
-          &euro;{property.pricePerNight} {dict.property.perNight}
+          &euro;{property.pricePerNight} {dict.property.perNight}{" "}
+          <span className="text-sm font-normal text-charcoal/50">
+            {dict.property.avgPriceNote}
+          </span>
         </p>
       </div>
     </Link>
