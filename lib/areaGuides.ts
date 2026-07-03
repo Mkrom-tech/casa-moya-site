@@ -75,7 +75,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Beste periode om te boeken",
-          body: "Het zwembad is te gebruiken van april tot en met oktober. Juli en augustus zijn het drukst en boeken het snelst vol; voor de beste prijs en ruime keuze raden we aan minimaal 2-3 maanden van tevoren te boeken, of te kiezen voor juni of september voor rustiger weer met nog volop zon."
+          body: "Moraira heeft een eigen microklimaat met zo'n 300 zonnige dagen per jaar, dus het is vrijwel het hele jaar aangenaam weer - ook buiten het hoogseizoen een goede keuze. Het zwembad is te gebruiken van april tot en met oktober; juli en augustus zijn het drukst en boeken het snelst vol, dus voor de beste prijs en ruime keuze raden we aan minimaal 2-3 maanden van tevoren te boeken, of te kiezen voor juni of september voor rustiger weer met nog volop zon."
         },
         {
           heading: "Waarom rechtstreeks boeken bij Casa Moya",
@@ -93,7 +93,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Best time to book",
-          body: "The pool is usable from April through October. July and August are the busiest months and book up fastest; for the best price and choice, book 2-3 months ahead, or choose June or September for quieter weather with plenty of sun."
+          body: "Moraira has its own microclimate with around 300 days of sunshine a year, so the weather is pleasant almost year-round - a great choice even outside high season. The pool is usable from April through October; July and August are the busiest months and book up fastest, so for the best price and choice, book 2-3 months ahead, or choose June or September for quieter weather with plenty of sun."
         },
         {
           heading: "Why book direct with Casa Moya",
@@ -111,7 +111,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Mejor época para reservar",
-          body: "La piscina se puede usar de abril a octubre. Julio y agosto son los meses más solicitados y se llenan antes; para el mejor precio y disponibilidad, reserva con 2-3 meses de antelación, o elige junio o septiembre para un clima más tranquilo con mucho sol."
+          body: "Moraira tiene su propio microclima con unos 300 días de sol al año, por lo que el tiempo es agradable casi todo el año - una gran opción incluso fuera de temporada alta. La piscina se puede usar de abril a octubre. Julio y agosto son los meses más solicitados y se llenan antes; para el mejor precio y disponibilidad, reserva con 2-3 meses de antelación, o elige junio o septiembre para un clima más tranquilo con mucho sol."
         },
         {
           heading: "Por qué reservar directamente con Casa Moya",
@@ -129,7 +129,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Il momento migliore per prenotare",
-          body: "La piscina è utilizzabile da aprile a ottobre. Luglio e agosto sono i mesi più richiesti e si riempiono più in fretta; per il miglior prezzo e disponibilità, prenota con 2-3 mesi di anticipo, oppure scegli giugno o settembre per un clima più tranquillo e ancora molto sole."
+          body: "Moraira ha un proprio microclima con circa 300 giorni di sole all'anno, quindi il clima è piacevole quasi tutto l'anno - un'ottima scelta anche fuori stagione. La piscina è utilizzabile da aprile a ottobre. Luglio e agosto sono i mesi più richiesti e si riempiono più in fretta; per il miglior prezzo e disponibilità, prenota con 2-3 mesi di anticipo, oppure scegli giugno o settembre per un clima più tranquillo e ancora molto sole."
         },
         {
           heading: "Perché prenotare direttamente con Casa Moya",
@@ -147,7 +147,7 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Beste Buchungszeit",
-          body: "Der Pool ist von April bis Oktober nutzbar. Juli und August sind die gefragtesten Monate und am schnellsten ausgebucht; für den besten Preis und die größte Auswahl empfehlen wir eine Buchung 2-3 Monate im Voraus, oder Juni bzw. September für ruhigeres Wetter mit weiterhin viel Sonne."
+          body: "Moraira hat ein eigenes Mikroklima mit rund 300 Sonnentagen im Jahr, daher ist das Wetter fast das ganze Jahr über angenehm - auch außerhalb der Hochsaison eine gute Wahl. Der Pool ist von April bis Oktober nutzbar. Juli und August sind die gefragtesten Monate und am schnellsten ausgebucht; für den besten Preis und die größte Auswahl empfehlen wir eine Buchung 2-3 Monate im Voraus, oder Juni bzw. September für ruhigeres Wetter mit weiterhin viel Sonne."
         },
         {
           heading: "Warum direkt bei Casa Moya buchen",
@@ -160,31 +160,31 @@ export const areaGuides: AreaGuide[] = [
         { q: "Hoe ver is het strand vanaf de villa?", a: "Het dichtstbijzijnde strand ligt op 2,1 km, ongeveer 5 minuten met de auto of een korte fietstocht." },
         { q: "Is er gratis parkeren in Moraira?", a: "Ja, bij de villa zelf en in het dorp is volop gratis parkeren, onder andere bij het gemeentehuis vlak bij het centrum." },
         { q: "Is Moraira geschikt voor kinderen?", a: "Zeker - het dorp is klein, veilig en goed te voet te doen, met rustige familiestranden zoals L'Ampolla." },
-        { q: "Wat is de beste periode om te boeken?", a: "Het zwembad is open van april tot oktober. Voor de beste beschikbaarheid en prijs boek je het liefst ruim vóór het hoogseizoen (juli-augustus)." }
+        { q: "Wat is de beste periode om te boeken?", a: "Moraira heeft een microklimaat met zo'n 300 zonnige dagen per jaar, dus het is het hele jaar door aangenaam om te boeken. Het zwembad is open van april tot oktober; voor de beste beschikbaarheid en prijs boek je wel het liefst ruim vóór het hoogseizoen (juli-augustus)." }
       ],
       en: [
         { q: "How far is the beach from the villa?", a: "The nearest beach is 2.1 km away, about a 5-minute drive or a short bike ride." },
         { q: "Is there free parking in Moraira?", a: "Yes - free parking at the villa itself, plus plenty of free parking around the village, including near the town hall close to the centre." },
         { q: "Is Moraira good for children?", a: "Yes - the village is small, safe and easy to explore on foot, with calm family beaches like L'Ampolla." },
-        { q: "What's the best time to book?", a: "The pool is open April through October. For the best availability and price, book well ahead of high season (July-August)." }
+        { q: "What's the best time to book?", a: "Moraira has a microclimate with around 300 sunny days a year, so it's a great time to book any time of year. The pool is open April through October; for the best availability and price, book well ahead of high season (July-August)." }
       ],
       es: [
         { q: "¿A qué distancia está la playa de la villa?", a: "La playa más cercana está a 2,1 km, unos 5 minutos en coche o un corto trayecto en bicicleta." },
         { q: "¿Hay aparcamiento gratuito en Moraira?", a: "Sí - aparcamiento gratuito en la propia villa, además de mucho aparcamiento gratuito por el pueblo, incluido junto al ayuntamiento cerca del centro." },
         { q: "¿Es Moraira adecuado para niños?", a: "Sí - el pueblo es pequeño, seguro y fácil de recorrer a pie, con playas familiares tranquilas como L'Ampolla." },
-        { q: "¿Cuál es la mejor época para reservar?", a: "La piscina está disponible de abril a octubre. Para la mejor disponibilidad y precio, reserva con antelación antes de la temporada alta (julio-agosto)." }
+        { q: "¿Cuál es la mejor época para reservar?", a: "Moraira tiene un microclima con unos 300 días de sol al año, por lo que siempre es un buen momento para reservar. La piscina está disponible de abril a octubre; para la mejor disponibilidad y precio, reserva con antelación antes de la temporada alta (julio-agosto)." }
       ],
       it: [
         { q: "Quanto dista la spiaggia dalla villa?", a: "La spiaggia più vicina è a 2,1 km, circa 5 minuti in auto o una breve pedalata." },
         { q: "C'è parcheggio gratuito a Moraira?", a: "Sì - parcheggio gratuito presso la villa stessa, oltre a molto parcheggio gratuito in paese, anche vicino al municipio nei pressi del centro." },
         { q: "Moraira è adatta ai bambini?", a: "Sì - il paese è piccolo, sicuro e facile da girare a piedi, con spiagge tranquille e familiari come L'Ampolla." },
-        { q: "Qual è il momento migliore per prenotare?", a: "La piscina è aperta da aprile a ottobre. Per la migliore disponibilità e il miglior prezzo, prenota con largo anticipo rispetto all'alta stagione (luglio-agosto)." }
+        { q: "Qual è il momento migliore per prenotare?", a: "Moraira ha un microclima con circa 300 giorni di sole all'anno, quindi è sempre un buon momento per prenotare. La piscina è aperta da aprile a ottobre; per la migliore disponibilità e il miglior prezzo, prenota con largo anticipo rispetto all'alta stagione (luglio-agosto)." }
       ],
       de: [
         { q: "Wie weit ist der Strand von der Villa entfernt?", a: "Der nächste Strand liegt 2,1 km entfernt, etwa 5 Minuten mit dem Auto oder eine kurze Fahrradfahrt." },
         { q: "Gibt es kostenlose Parkplätze in Moraira?", a: "Ja - kostenlose Parkplätze direkt bei der Villa sowie viele kostenlose Parkmöglichkeiten im Dorf, unter anderem beim Rathaus nahe dem Zentrum." },
         { q: "Ist Moraira gut für Kinder geeignet?", a: "Ja - das Dorf ist klein, sicher und gut zu Fuß erkundbar, mit ruhigen Familienstränden wie L'Ampolla." },
-        { q: "Was ist die beste Buchungszeit?", a: "Der Pool ist von April bis Oktober geöffnet. Für die beste Verfügbarkeit und den besten Preis buchen Sie am besten weit vor der Hochsaison (Juli-August)." }
+        { q: "Was ist die beste Buchungszeit?", a: "Moraira hat ein Mikroklima mit rund 300 Sonnentagen im Jahr, daher ist es das ganze Jahr über eine gute Zeit zum Buchen. Der Pool ist von April bis Oktober geöffnet; für die beste Verfügbarkeit und den besten Preis buchen Sie am besten weit vor der Hochsaison (Juli-August)." }
       ]
     }
   },
@@ -235,11 +235,11 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Geschikt voor gezinnen",
-          body: "Het strand heeft kalm, ondiep water, houten loopplanken, een EHBO-post van het Rode Kruis en toezicht - ideaal voor gezinnen met jonge kinderen. 's Zomers ligt er ook een opblaasbaar speelplatform in zee."
+          body: "Het strand heeft kalm, ondiep water, houten loopplanken, een EHBO-post van het Rode Kruis en toezicht - ideaal voor gezinnen met jonge kinderen. Onder het appartement zit bovendien een surfschool, leuk voor de wat oudere kinderen."
         },
         {
           heading: "Beste periode om te boeken",
-          body: "Denia is vrijwel het hele jaar aangenaam, maar juli en augustus zijn het populairst. Voor rustiger strand en nog steeds warm weer zijn juni en september een goede keuze; boek ruim van tevoren voor het hoogseizoen."
+          body: "Denia heeft, net als Moraira, een eigen microklimaat met zo'n 300 zonnige dagen per jaar - het is dan ook vrijwel het hele jaar aangenaam en dus altijd een goede keuze om te boeken. Juli en augustus zijn wel het populairst; voor een rustiger strand en nog steeds warm weer zijn juni en september een goede keuze, boek ruim van tevoren voor het hoogseizoen."
         },
         {
           heading: "Waarom rechtstreeks boeken bij Casa Moya",
@@ -253,11 +253,11 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Good for families",
-          body: "The beach has calm, shallow water, wooden boardwalks, a Red Cross first-aid post and lifeguard cover - ideal for families with young children. In summer there's also an inflatable play platform in the sea."
+          body: "The beach has calm, shallow water, wooden boardwalks, a Red Cross first-aid post and lifeguard cover - ideal for families with young children. There's also a surf school right underneath the apartment, great for older kids and teens."
         },
         {
           heading: "Best time to book",
-          body: "Denia is pleasant nearly year-round, but July and August are the most popular. For a quieter beach with still-warm weather, June and September are great choices; book well ahead for high season."
+          body: "Like Moraira, Denia has its own microclimate with around 300 days of sunshine a year, so it's pleasant nearly year-round and always a good time to book. July and August are the most popular months; for a quieter beach with still-warm weather, June and September are great choices, so book well ahead for high season."
         },
         {
           heading: "Why book direct with Casa Moya",
@@ -271,11 +271,11 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Ideal para familias",
-          body: "La playa tiene aguas calmas y poco profundas, pasarelas de madera, un puesto de primeros auxilios de Cruz Roja y vigilancia - ideal para familias con niños pequeños. En verano también hay una plataforma inflable en el mar."
+          body: "La playa tiene aguas calmas y poco profundas, pasarelas de madera, un puesto de primeros auxilios de Cruz Roja y vigilancia - ideal para familias con niños pequeños. Además, justo debajo del apartamento hay una escuela de surf, ideal para los niños más mayores."
         },
         {
           heading: "Mejor época para reservar",
-          body: "Denia es agradable casi todo el año, pero julio y agosto son los meses más populares. Para una playa más tranquila con clima aún cálido, junio y septiembre son buenas opciones; reserva con antelación para la temporada alta."
+          body: "Al igual que Moraira, Denia tiene su propio microclima con unos 300 días de sol al año, por lo que es agradable casi todo el año y siempre es un buen momento para reservar. Julio y agosto son los meses más populares; para una playa más tranquila con clima aún cálido, junio y septiembre son buenas opciones, así que reserva con antelación para la temporada alta."
         },
         {
           heading: "Por qué reservar directamente con Casa Moya",
@@ -289,11 +289,11 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Ideale per le famiglie",
-          body: "La spiaggia ha acque calme e poco profonde, passerelle in legno, un posto di primo soccorso della Croce Rossa e sorveglianza - ideale per famiglie con bambini piccoli. In estate c'è anche una piattaforma gonfiabile in mare."
+          body: "La spiaggia ha acque calme e poco profonde, passerelle in legno, un posto di primo soccorso della Croce Rossa e sorveglianza - ideale per famiglie con bambini piccoli. Proprio sotto l'appartamento si trova anche una scuola di surf, perfetta per i bambini più grandi."
         },
         {
           heading: "Il momento migliore per prenotare",
-          body: "Denia è piacevole quasi tutto l'anno, ma luglio e agosto sono i mesi più richiesti. Per una spiaggia più tranquilla con clima ancora caldo, giugno e settembre sono un'ottima scelta; prenota con anticipo per l'alta stagione."
+          body: "Come Moraira, anche Denia ha un proprio microclima con circa 300 giorni di sole all'anno, quindi è piacevole quasi tutto l'anno ed è sempre un buon momento per prenotare. Luglio e agosto sono i mesi più richiesti; per una spiaggia più tranquilla con clima ancora caldo, giugno e settembre sono un'ottima scelta, quindi prenota con anticipo per l'alta stagione."
         },
         {
           heading: "Perché prenotare direttamente con Casa Moya",
@@ -307,11 +307,11 @@ export const areaGuides: AreaGuide[] = [
         },
         {
           heading: "Gut für Familien",
-          body: "Der Strand hat ruhiges, flaches Wasser, Holzstege, eine Erste-Hilfe-Station des Roten Kreuzes und Aufsicht - ideal für Familien mit kleinen Kindern. Im Sommer gibt es zudem eine aufblasbare Spielplattform im Meer."
+          body: "Der Strand hat ruhiges, flaches Wasser, Holzstege, eine Erste-Hilfe-Station des Roten Kreuzes und Aufsicht - ideal für Familien mit kleinen Kindern. Direkt unter der Wohnung befindet sich zudem eine Surfschule, ideal für die etwas älteren Kinder."
         },
         {
           heading: "Beste Buchungszeit",
-          body: "Denia ist fast das ganze Jahr über angenehm, aber Juli und August sind am beliebtesten. Für einen ruhigeren Strand bei weiterhin warmem Wetter sind Juni und September gute Optionen; buchen Sie für die Hochsaison rechtzeitig im Voraus."
+          body: "Wie Moraira hat auch Denia ein eigenes Mikroklima mit rund 300 Sonnentagen im Jahr, daher ist es fast das ganze Jahr über angenehm und immer ein guter Zeitpunkt zum Buchen. Juli und August sind die beliebtesten Monate; für einen ruhigeren Strand bei weiterhin warmem Wetter sind Juni und September gute Optionen, buchen Sie also für die Hochsaison rechtzeitig im Voraus."
         },
         {
           heading: "Warum direkt bei Casa Moya buchen",
@@ -323,31 +323,31 @@ export const areaGuides: AreaGuide[] = [
       nl: [
         { q: "Hoe ver is het strand vanaf het appartement?", a: "Het strand van Les Deveses ligt op 90 meter, letterlijk om de hoek." },
         { q: "Is er parkeren bij het appartement?", a: "Ja, er is gratis parkeren op eigen terrein en volop gratis straatparkeren rond het strand." },
-        { q: "Is Les Deveses geschikt voor kinderen?", a: "Ja - kalm water, een opblaasbaar speelplatform in de zomer en toezicht op het strand maken het een van de meest gezinsvriendelijke stranden van Denia." },
+        { q: "Is Les Deveses geschikt voor kinderen?", a: "Ja - kalm water, toezicht op het strand en een surfschool onder het appartement maken het een van de meest gezinsvriendelijke stranden van Denia." },
         { q: "Hoe ver is het centrum van Denia?", a: "Ongeveer 10 km; in de zomer rijdt er een bus tussen Les Deveses en het centrum." }
       ],
       en: [
         { q: "How far is the beach from the apartment?", a: "Les Deveses beach is 90 metres away, literally around the corner." },
         { q: "Is there parking at the apartment?", a: "Yes - free on-site parking, plus plenty of free street parking around the beach." },
-        { q: "Is Les Deveses good for children?", a: "Yes - calm water, a summer inflatable play platform and lifeguard cover make it one of Denia's most family-friendly beaches." },
+        { q: "Is Les Deveses good for children?", a: "Yes - calm water, lifeguard cover and a surf school right beneath the apartment make it one of Denia's most family-friendly beaches." },
         { q: "How far is Denia's town centre?", a: "About 10 km; a summer bus connects Les Deveses with the centre." }
       ],
       es: [
         { q: "¿A qué distancia está la playa del apartamento?", a: "La playa de Les Deveses está a 90 metros, literalmente a la vuelta de la esquina." },
         { q: "¿Hay aparcamiento en el apartamento?", a: "Sí - aparcamiento gratuito en la propia propiedad, además de mucho aparcamiento gratuito en la calle alrededor de la playa." },
-        { q: "¿Es Les Deveses adecuada para niños?", a: "Sí - aguas calmas, una plataforma inflable en verano y vigilancia hacen que sea una de las playas más familiares de Denia." },
+        { q: "¿Es Les Deveses adecuada para niños?", a: "Sí - aguas calmas, vigilancia en la playa y una escuela de surf debajo del apartamento hacen que sea una de las playas más familiares de Denia." },
         { q: "¿A qué distancia está el centro de Denia?", a: "Unos 10 km; en verano un autobús conecta Les Deveses con el centro." }
       ],
       it: [
         { q: "Quanto dista la spiaggia dall'appartamento?", a: "La spiaggia di Les Deveses è a 90 metri, letteralmente dietro l'angolo." },
         { q: "C'è parcheggio presso l'appartamento?", a: "Sì - parcheggio gratuito in loco, oltre a molto parcheggio gratuito in strada intorno alla spiaggia." },
-        { q: "Les Deveses è adatta ai bambini?", a: "Sì - acque calme, una piattaforma gonfiabile estiva e sorveglianza la rendono una delle spiagge più adatte alle famiglie di Denia." },
+        { q: "Les Deveses è adatta ai bambini?", a: "Sì - acque calme, sorveglianza in spiaggia e una scuola di surf sotto l'appartamento la rendono una delle spiagge più adatte alle famiglie di Denia." },
         { q: "Quanto dista il centro di Denia?", a: "Circa 10 km; in estate un autobus collega Les Deveses al centro." }
       ],
       de: [
         { q: "Wie weit ist der Strand von der Wohnung entfernt?", a: "Der Strand von Les Deveses liegt 90 Meter entfernt, buchstäblich um die Ecke." },
         { q: "Gibt es Parkplätze bei der Wohnung?", a: "Ja - kostenlose Parkplätze auf dem eigenen Grundstück sowie viele kostenlose Straßenparkplätze rund um den Strand." },
-        { q: "Ist Les Deveses gut für Kinder geeignet?", a: "Ja - ruhiges Wasser, eine sommerliche aufblasbare Spielplattform und Aufsicht machen ihn zu einem der familienfreundlichsten Strände Denias." },
+        { q: "Ist Les Deveses gut für Kinder geeignet?", a: "Ja - ruhiges Wasser, Aufsicht am Strand und eine Surfschule direkt unter der Wohnung machen ihn zu einem der familienfreundlichsten Strände Denias." },
         { q: "Wie weit ist das Zentrum von Denia entfernt?", a: "Etwa 10 km; im Sommer verbindet ein Bus Les Deveses mit dem Zentrum." }
       ]
     }
