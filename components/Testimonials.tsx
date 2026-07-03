@@ -18,11 +18,11 @@ export default function Testimonials({
           {reviews.aggregateRating.reviewCount} {sourceLabel} {reviews.aggregateRating.source}
         </span>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {reviews.testimonials.map((t) => (
           <blockquote
             key={`${t.author}-${t.source}`}
-            className="rounded-xl border border-gold/40 bg-white p-4 text-sm text-charcoal/80"
+            className="rounded-xl border border-gold/40 bg-green-50 p-4 text-sm text-charcoal/80"
           >
             <p>&ldquo;{t.text}&rdquo;</p>
             <footer className="mt-3 text-xs text-charcoal/50">
