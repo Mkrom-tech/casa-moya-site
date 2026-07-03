@@ -22,7 +22,7 @@ export default function Testimonials({
         {reviews.testimonials.map((t) => (
           <blockquote
             key={`${t.author}-${t.source}`}
-            className="rounded-xl border border-charcoal/10 bg-white p-4 text-sm text-charcoal/80"
+            className="rounded-xl border border-gold/40 bg-white p-4 text-sm text-charcoal/80"
           >
             <p>&ldquo;{t.text}&rdquo;</p>
             <footer className="mt-3 text-xs text-charcoal/50">

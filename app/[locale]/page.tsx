@@ -4,6 +4,7 @@ import Image from "next/image";
 import { properties, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import { areaGuides, getAreaGuideHref } from "@/lib/areaGuides";
+import { getPropertyReviews } from "@/lib/testimonials";
 import PropertyCard from "@/components/PropertyCard";
 
 export function generateStaticParams() {
@@ -61,6 +62,37 @@ export default function HomePage({
             locale={params.locale}
           />
         ))}
+      </section>
+
+      <section className="mx-auto max-w-5xl space-y-4 px-6 pb-16">
+        {properties.map((property) => {
+          const reviews = getPropertyReviews(property.slug);
+          if (!reviews) return null;
+          const quote = reviews.testimonials[0];
+          return (
+            <Link
+              key={property.slug}
+              href={`/${params.locale}/properties/${property.slug}`}
+              className="flex aspect-[16/3] w-full items-center gap-6 overflow-hidden rounded-2xl border-2 border-gold bg-white p-6 transition hover:shadow-lg"
+            >
+              <div className="shrink-0 text-center">
+                <div className="font-display text-2xl text-ink">
+                  {reviews.aggregateRating.ratingValue}/{reviews.aggregateRating.bestRating}
+                </div>
+                <div className="text-xs text-charcoal/50">
+                  {reviews.aggregateRating.reviewCount} {dict.property.reviewsSource}{" "}
+                  {reviews.aggregateRating.source}
+                </div>
+              </div>
+              <blockquote className="flex-1 text-sm italic text-charcoal/80 sm:text-base">
+                &ldquo;{quote.text}&rdquo;
+                <footer className="mt-1 text-xs not-italic text-charcoal/50">
+                  — {quote.author}, {property.name}
+                </footer>
+              </blockquote>
+            </Link>
+          );
+        })}
       </section>
 
       <section className="border-y border-charcoal/10 bg-white/60 py-16">

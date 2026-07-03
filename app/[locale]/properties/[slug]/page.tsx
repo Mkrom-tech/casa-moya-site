@@ -136,6 +136,14 @@ export default function PropertyPage({
             </ul>
           </div>
 
+          {reviews && (
+            <Testimonials
+              reviews={reviews}
+              title={dict.property.reviewsTitle}
+              sourceLabel={dict.property.reviewsSource}
+            />
+          )}
+
           <PhotoGallery
             images={property.images}
             heroImage={property.heroImage}
@@ -144,14 +152,6 @@ export default function PropertyPage({
           />
 
           <AvailabilityCalendar locale={params.locale} slug={property.slug} />
-
-          {reviews && (
-            <Testimonials
-              reviews={reviews}
-              title={dict.property.reviewsTitle}
-              sourceLabel={dict.property.reviewsSource}
-            />
-          )}
 
           {relatedGuide && (
             <Link
