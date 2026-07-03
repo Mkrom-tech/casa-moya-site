@@ -9,6 +9,8 @@ import PhotoGallery from "@/components/PhotoGallery";
 import { LogoMark } from "@/components/Logo";
 import Link from "next/link";
 import Image from "next/image";
+import { getPropertyReviews } from "@/lib/testimonials";
+import Testimonials from "@/components/Testimonials";
 
 export function generateStaticParams() {
   return properties.flatMap((p) =>
@@ -62,6 +64,7 @@ export default function PropertyPage({
   const description = property.description[params.locale];
   const amenities = property.amenities[params.locale];
   const relatedGuide = areaGuides.find((g) => g.relatedPropertySlug === property.slug);
+  const reviews = getPropertyReviews(property.slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -75,7 +78,17 @@ export default function PropertyPage({
       addressCountry: "ES"
     },
     priceRange: `€${property.pricePerNight}`,
-    numberOfRooms: property.bedrooms
+    numberOfRooms: property.bedrooms,
+    ...(reviews
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: reviews.aggregateRating.ratingValue,
+            bestRating: reviews.aggregateRating.bestRating,
+            reviewCount: reviews.aggregateRating.reviewCount
+          }
+        }
+      : {})
   };
 
   return (
@@ -131,6 +144,14 @@ export default function PropertyPage({
           />
 
           <AvailabilityCalendar locale={params.locale} slug={property.slug} />
+
+          {reviews && (
+            <Testimonials
+              reviews={reviews}
+              title={dict.property.reviewsTitle}
+              sourceLabel={dict.property.reviewsSource}
+            />
+          )}
 
           {relatedGuide && (
             <Link
