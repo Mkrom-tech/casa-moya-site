@@ -8,6 +8,7 @@ import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import PhotoGallery from "@/components/PhotoGallery";
 import { LogoMark } from "@/components/Logo";
 import Link from "next/link";
+import Image from "next/image";
 
 export function generateStaticParams() {
   return properties.flatMap((p) =>
@@ -96,11 +97,14 @@ export default function PropertyPage({
       </h1>
       <p className="mt-1 text-charcoal/70">{property.location}</p>
 
-      <div className="mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-charcoal/10">
-        <img
+      <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-charcoal/10">
+        <Image
           src={property.heroImage}
           alt={`${property.name} — ${property.location}`}
-          className="h-full w-full object-cover"
+          fill
+          priority
+          sizes="(min-width: 1024px) 896px, 100vw"
+          className="object-cover"
         />
       </div>
 

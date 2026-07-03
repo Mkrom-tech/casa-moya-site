@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { properties, type Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import { areaGuides, getAreaGuideHref } from "@/lib/areaGuides";
@@ -100,11 +101,13 @@ export default function HomePage({
                 href={getAreaGuideHref(params.locale, guide)}
                 className="group block overflow-hidden rounded-2xl border border-charcoal/10 bg-white transition hover:shadow-lg"
               >
-                <div className="aspect-[16/9] w-full overflow-hidden bg-charcoal/10">
-                  <img
+                <div className="relative aspect-[16/9] w-full overflow-hidden bg-charcoal/10">
+                  <Image
                     src={guide.heroImage}
                     alt={guide.title[params.locale]}
-                    className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5">

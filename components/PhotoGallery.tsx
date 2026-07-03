@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface PhotoGalleryProps {
   images: string[];
@@ -49,11 +50,13 @@ export default function PhotoGallery({
             onClick={() => setOpenIndex(i)}
             className="group relative z-0 block aspect-[4/3] hover:z-20"
           >
-            <img
+            <Image
               src={img}
               alt={`${alt} — ${i + 2}`}
+              fill
               loading="lazy"
-              className="h-full w-full origin-center rounded-lg bg-charcoal/10 object-cover transition-transform duration-300 ease-out group-hover:scale-[2.2] group-hover:shadow-2xl"
+              sizes="(min-width: 1024px) 20vw, (min-width: 640px) 25vw, 33vw"
+              className="origin-center rounded-lg bg-charcoal/10 object-cover transition-transform duration-300 ease-out group-hover:scale-[2.2] group-hover:shadow-2xl"
             />
           </button>
         ))}

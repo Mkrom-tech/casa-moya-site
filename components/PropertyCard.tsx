@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Locale, Property } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 
@@ -15,12 +16,13 @@ export default function PropertyCard({
       href={`/${locale}/properties/${property.slug}`}
       className="group block overflow-hidden rounded-2xl border border-charcoal/10 bg-white transition hover:shadow-lg"
     >
-      <div className="aspect-[4/3] w-full overflow-hidden bg-charcoal/10">
-        {/* Replace with real photos in /public/images */}
-        <img
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-charcoal/10">
+        <Image
           src={property.heroImage}
           alt={property.name}
-          className="h-full w-full object-cover transition group-hover:scale-105"
+          fill
+          sizes="(min-width: 640px) 50vw, 100vw"
+          className="object-cover transition group-hover:scale-105"
         />
       </div>
       <div className="space-y-2 p-5">

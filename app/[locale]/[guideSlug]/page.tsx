@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Locale } from "@/lib/properties";
 import { getProperty } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
@@ -85,8 +86,15 @@ export default function AreaGuidePage({
 
         <h1 className="mt-4 font-display text-3xl text-ink sm:text-4xl">{title}</h1>
 
-        <div className="mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-charcoal/10">
-          <img src={guide.heroImage} alt={title} className="h-full w-full object-cover" />
+        <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-charcoal/10">
+          <Image
+            src={guide.heroImage}
+            alt={title}
+            fill
+            priority
+            sizes="(min-width: 1024px) 768px, 100vw"
+            className="object-cover"
+          />
         </div>
 
         <p className="mt-6 text-charcoal/80">{intro}</p>
