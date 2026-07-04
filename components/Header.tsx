@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/properties";
 import { getDictionary } from "@/lib/dictionaries";
 import { LogoMark } from "@/components/Logo";
 
-const LOCALES: Locale[] = ["nl", "en", "es", "it", "de"];
+const LOCALES: Locale[] = ["nl", "en", "es", "it", "de", "fr"];
 
 export default function Header({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -20,14 +20,14 @@ export default function Header({ locale }: { locale: Locale }) {
             {dict.siteName}
           </span>
         </Link>
-        <nav className="flex items-center gap-6 text-sm text-charcoal">
-          <div className="flex items-center gap-1">
+        <nav className="text-sm text-charcoal">
+          <div className="grid grid-cols-3 gap-1">
             {LOCALES.map((l) => (
               <Link
                 key={l}
                 href={`/${l}`}
                 className={[
-                  "rounded-full border px-2.5 py-1 text-xs uppercase tracking-wide transition",
+                  "rounded-full border px-2.5 py-1 text-center text-xs uppercase tracking-wide transition",
                   l === locale
                     ? "border-ink bg-ink text-white"
                     : "border-charcoal/20 text-charcoal hover:border-charcoal/40"

@@ -5,7 +5,7 @@ import { areaGuides } from "@/lib/areaGuides";
 const BASE_URL = "https://www.casa-moya.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const locales = ["nl", "en", "es", "it", "de"] as const;
+  const locales = ["nl", "en", "es", "it", "de", "fr"] as const;
 
   const homeEntries: MetadataRoute.Sitemap = locales.map((locale) => ({
     url: `${BASE_URL}/${locale}`,

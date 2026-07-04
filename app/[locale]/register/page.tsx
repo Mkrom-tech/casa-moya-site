@@ -4,7 +4,14 @@ import { getDictionary } from "@/lib/dictionaries";
 import RegistrationForm from "@/components/RegistrationForm";
 
 export function generateStaticParams() {
-  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }, { locale: "de" }];
+  return [
+    { locale: "nl" },
+    { locale: "en" },
+    { locale: "es" },
+    { locale: "it" },
+    { locale: "de" },
+    { locale: "fr" }
+  ];
 }
 
 export function generateMetadata({

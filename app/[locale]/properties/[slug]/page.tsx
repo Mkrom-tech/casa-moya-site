@@ -12,9 +12,18 @@ import Image from "next/image";
 import { getPropertyReviews } from "@/lib/testimonials";
 import Testimonials from "@/components/Testimonials";
 
+const OG_LOCALES: Record<Locale, string> = {
+  nl: "nl_NL",
+  en: "en_US",
+  es: "es_ES",
+  it: "it_IT",
+  de: "de_DE",
+  fr: "fr_FR"
+};
+
 export function generateStaticParams() {
   return properties.flatMap((p) =>
-    ["nl", "en", "es", "it", "de"].map((locale) => ({ locale, slug: p.slug }))
+    ["nl", "en", "es", "it", "de", "fr"].map((locale) => ({ locale, slug: p.slug }))
   );
 }
 
@@ -39,7 +48,8 @@ export function generateMetadata({
         en: `/en/properties/${property.slug}`,
         es: `/es/properties/${property.slug}`,
         it: `/it/properties/${property.slug}`,
-        de: `/de/properties/${property.slug}`
+        de: `/de/properties/${property.slug}`,
+        fr: `/fr/properties/${property.slug}`
       }
     },
     openGraph: {
@@ -47,7 +57,7 @@ export function generateMetadata({
       description,
       url: `/${params.locale}/properties/${property.slug}`,
       images: [property.heroImage],
-      locale: params.locale === "nl" ? "nl_NL" : "en_US"
+      locale: OG_LOCALES[params.locale]
     }
   };
 }

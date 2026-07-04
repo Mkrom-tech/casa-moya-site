@@ -31,6 +31,10 @@ const MONTH_NAMES: Record<Locale, string[]> = {
   de: [
     "Januar", "Februar", "März", "April", "Mai", "Juni",
     "Juli", "August", "September", "Oktober", "November", "Dezember"
+  ],
+  fr: [
+    "janvier", "février", "mars", "avril", "mai", "juin",
+    "juillet", "août", "septembre", "octobre", "novembre", "décembre"
   ]
 };
 
@@ -39,7 +43,8 @@ const WEEKDAYS: Record<Locale, string[]> = {
   en: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
   es: ["lu", "ma", "mi", "ju", "vi", "sá", "do"],
   it: ["lu", "ma", "me", "gi", "ve", "sa", "do"],
-  de: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+  de: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+  fr: ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"]
 };
 
 function toDateOnly(d: Date) {

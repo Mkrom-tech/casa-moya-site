@@ -31,7 +31,8 @@ export const areaGuides: AreaGuide[] = [
       en: "villa-rental-moraira",
       es: "alquiler-villa-moraira",
       it: "villa-affitto-moraira",
-      de: "ferienvilla-moraira"
+      de: "ferienvilla-moraira",
+      fr: "location-villa-moraira"
     },
     relatedPropertySlug: "casa-moya-moraira",
     heroImage: "/images/moraira-2.jpg",
@@ -40,28 +41,32 @@ export const areaGuides: AreaGuide[] = [
       en: "Villa Rental in Moraira - Private Pool and Sea Views",
       es: "Villa en alquiler en Moraira - piscina privada y vistas al mar",
       it: "Villa in affitto a Moraira - piscina privata e vista mare",
-      de: "Villa mieten in Moraira - mit Privatpool und Meerblick"
+      de: "Villa mieten in Moraira - mit Privatpool und Meerblick",
+      fr: "Location de villa à Moraira - avec piscine privée et vue sur mer"
     },
     metaTitle: {
       nl: "Vakantievilla Moraira huren | Privézwembad & zeezicht - Casa Moya",
       en: "Moraira Villa Rental | Private Pool & Sea View - Casa Moya",
       es: "Villa en alquiler en Moraira | Piscina privada y vistas al mar - Casa Moya",
       it: "Villa in affitto a Moraira | Piscina privata e vista mare - Casa Moya",
-      de: "Villa mieten in Moraira | Privatpool und Meerblick - Casa Moya"
+      de: "Villa mieten in Moraira | Privatpool und Meerblick - Casa Moya",
+      fr: "Location de villa à Moraira | Piscine privée et vue sur mer - Casa Moya"
     },
     metaDescription: {
       nl: "Op zoek naar een vakantievilla in Moraira met privézwembad en zeezicht? Casa Moya ligt 2,1 km van het strand, in een rustige, kindvriendelijke omgeving. Boek rechtstreeks, zonder commissie.",
       en: "Looking for a villa rental in Moraira with a private pool and sea views? Casa Moya is 2.1 km from the beach, in a quiet, family-friendly setting. Book direct, no commission.",
       es: "¿Buscas una villa en alquiler en Moraira con piscina privada y vistas al mar? Casa Moya está a 2,1 km de la playa, en un entorno tranquilo y familiar. Reserva directa, sin comisión.",
       it: "Cerchi una villa in affitto a Moraira con piscina privata e vista mare? Casa Moya si trova a 2,1 km dalla spiaggia, in una zona tranquilla e adatta alle famiglie. Prenota diretto, senza commissioni.",
-      de: "Suchen Sie eine Villa in Moraira mit Privatpool und Meerblick? Casa Moya liegt 2,1 km vom Strand entfernt, in ruhiger, familienfreundlicher Lage. Direkt buchen, ohne Provision."
+      de: "Suchen Sie eine Villa in Moraira mit Privatpool und Meerblick? Casa Moya liegt 2,1 km vom Strand entfernt, in ruhiger, familienfreundlicher Lage. Direkt buchen, ohne Provision.",
+      fr: "Vous cherchez une villa à louer à Moraira avec piscine privée et vue sur mer ? Casa Moya se trouve à 2,1 km de la plage, dans un cadre calme et familial. Réservez directement, sans commission."
     },
     intro: {
       nl: "Moraira is een van de rustigste en meest gewilde badplaatsen aan de Costa Blanca - een klein, veilig dorp met een goed te belopen centrum, mooie baaien en een boulevard langs zee. Casa Moya is een vakantievilla met privézwembad, tuin en zeezicht, 2,1 km van het strand en 3,2 km van het centrum.",
       en: "Moraira is one of the quietest and most sought-after resort towns on the Costa Blanca - a small, safe village with a walkable centre, beautiful coves and a seafront promenade. Casa Moya is a villa with a private pool, garden and sea views, 2.1 km from the beach and 3.2 km from the centre.",
       es: "Moraira es uno de los pueblos costeros más tranquilos y solicitados de la Costa Blanca - un pueblo pequeño y seguro, con un centro accesible a pie, calas preciosas y un paseo marítimo. Casa Moya es una villa con piscina privada, jardín y vistas al mar, a 2,1 km de la playa y 3,2 km del centro.",
       it: "Moraira è una delle località costiere più tranquille e ricercate della Costa Blanca - un piccolo borgo sicuro, con un centro percorribile a piedi, calette bellissime e una passeggiata lungomare. Casa Moya è una villa con piscina privata, giardino e vista mare, a 2,1 km dalla spiaggia e 3,2 km dal centro.",
-      de: "Moraira ist einer der ruhigsten und beliebtesten Ferienorte an der Costa Blanca - ein kleines, sicheres Dorf mit einem zu Fuß erreichbaren Zentrum, wunderschönen Buchten und einer Strandpromenade. Casa Moya ist eine Villa mit Privatpool, Garten und Meerblick, 2,1 km vom Strand und 3,2 km vom Zentrum entfernt."
+      de: "Moraira ist einer der ruhigsten und beliebtesten Ferienorte an der Costa Blanca - ein kleines, sicheres Dorf mit einem zu Fuß erreichbaren Zentrum, wunderschönen Buchten und einer Strandpromenade. Casa Moya ist eine Villa mit Privatpool, Garten und Meerblick, 2,1 km vom Strand und 3,2 km vom Zentrum entfernt.",
+      fr: "Moraira est l'une des stations balnéaires les plus tranquilles et les plus prisées de la Costa Blanca - un petit village sûr avec un centre accessible à pied, de belles criques et une promenade en bord de mer. Casa Moya est une villa avec piscine privée, jardin et vue sur mer, à 2,1 km de la plage et 3,2 km du centre."
     },
     sections: {
       nl: [
@@ -153,6 +158,24 @@ export const areaGuides: AreaGuide[] = [
           heading: "Warum direkt bei Casa Moya buchen",
           body: "Direkt buchen bedeutet keine Provision für Airbnb oder Booking.com, persönlichen Kontakt mit dem Eigentümer, und immer den besten Direktpreis für dieselbe Villa."
         }
+      ],
+      fr: [
+        {
+          heading: "Emplacement et déplacements",
+          body: "La plage la plus proche, L'Ampolla, est la plus grande et la plus familiale de Moraira, juste au début de la promenade. Un peu plus loin se trouve la crique tranquille d'El Portet, à environ 1 km, par un chemin pittoresque également accessible aux poussettes. Le stationnement dans le village est en grande partie gratuit ; il y a un grand parking gratuit près de la mairie (La Sanieta), à proximité du centre. En été, arrivez avant 10h si vous voulez vous garer près de la plage."
+        },
+        {
+          heading: "Idéal pour les familles",
+          body: "Moraira est petit, sûr et facile à parcourir à pied - idéal pour les familles avec enfants. Les criques tranquilles, la promenade et le marché hebdomadaire en font une destination reposante, sans l'agitation des plus grandes villes côtières."
+        },
+        {
+          heading: "Meilleure période pour réserver",
+          body: "Moraira bénéficie d'un microclimat propre avec environ 300 jours de soleil par an, ce qui rend le climat agréable presque toute l'année - un excellent choix même hors haute saison. La piscine est utilisable d'avril à octobre ; juillet et août sont les mois les plus demandés et se réservent le plus vite, donc pour le meilleur prix et le plus grand choix, réservez 2-3 mois à l'avance, ou choisissez juin ou septembre pour un temps plus calme avec encore beaucoup de soleil."
+        },
+        {
+          heading: "Pourquoi réserver directement avec Casa Moya",
+          body: "Réserver directement signifie aucune commission pour Airbnb ou Booking.com, un contact personnel avec le propriétaire, et toujours le meilleur tarif direct pour la même villa."
+        }
       ]
     },
     faq: {
@@ -185,6 +208,12 @@ export const areaGuides: AreaGuide[] = [
         { q: "Gibt es kostenlose Parkplätze in Moraira?", a: "Ja - kostenlose Parkplätze direkt bei der Villa sowie viele kostenlose Parkmöglichkeiten im Dorf, unter anderem beim Rathaus nahe dem Zentrum." },
         { q: "Ist Moraira gut für Kinder geeignet?", a: "Ja - das Dorf ist klein, sicher und gut zu Fuß erkundbar, mit ruhigen Familienstränden wie L'Ampolla." },
         { q: "Was ist die beste Buchungszeit?", a: "Moraira hat ein Mikroklima mit rund 300 Sonnentagen im Jahr, daher ist es das ganze Jahr über eine gute Zeit zum Buchen. Der Pool ist von April bis Oktober geöffnet; für die beste Verfügbarkeit und den besten Preis buchen Sie am besten weit vor der Hochsaison (Juli-August)." }
+      ],
+      fr: [
+        { q: "À quelle distance se trouve la plage depuis la villa ?", a: "La plage la plus proche se trouve à 2,1 km, soit environ 5 minutes en voiture ou un court trajet à vélo." },
+        { q: "Y a-t-il un parking gratuit à Moraira ?", a: "Oui - parking gratuit à la villa même, ainsi que de nombreuses places gratuites dans le village, notamment près de la mairie proche du centre." },
+        { q: "Moraira convient-elle aux enfants ?", a: "Tout à fait - le village est petit, sûr et facile à parcourir à pied, avec des plages familiales tranquilles comme L'Ampolla." },
+        { q: "Quelle est la meilleure période pour réserver ?", a: "Moraira bénéficie d'un microclimat avec environ 300 jours de soleil par an, c'est donc un bon moment pour réserver toute l'année. La piscine est ouverte d'avril à octobre ; pour la meilleure disponibilité et le meilleur prix, réservez de préférence bien avant la haute saison (juillet-août)." }
       ]
     }
   },
@@ -195,7 +224,8 @@ export const areaGuides: AreaGuide[] = [
       en: "sea-view-apartment-denia",
       es: "apartamento-vistas-mar-denia",
       it: "appartamento-vista-mare-denia",
-      de: "meerblick-wohnung-denia"
+      de: "meerblick-wohnung-denia",
+      fr: "appartement-vue-mer-denia"
     },
     relatedPropertySlug: "moya-apartment-denia",
     heroImage: "/images/denia-18.avif",
@@ -204,28 +234,32 @@ export const areaGuides: AreaGuide[] = [
       en: "Sea View Apartment Rental in Denia - On Les Deveses Beach",
       es: "Apartamento con vistas al mar en alquiler en Denia - en la playa de Les Deveses",
       it: "Appartamento vista mare in affitto a Denia - sulla spiaggia di Les Deveses",
-      de: "Wohnung mit Meerblick mieten in Denia - am Strand von Les Deveses"
+      de: "Wohnung mit Meerblick mieten in Denia - am Strand von Les Deveses",
+      fr: "Location d'appartement vue mer à Denia - sur la plage de Les Deveses"
     },
     metaTitle: {
       nl: "Zeezicht appartement Denia huren | Strand Les Deveses - Casa Moya",
       en: "Denia Sea View Apartment Rental | Les Deveses Beach - Casa Moya",
       es: "Apartamento con vistas al mar en Denia | Playa Les Deveses - Casa Moya",
       it: "Appartamento vista mare a Denia | Spiaggia Les Deveses - Casa Moya",
-      de: "Wohnung mit Meerblick in Denia | Strand Les Deveses - Casa Moya"
+      de: "Wohnung mit Meerblick in Denia | Strand Les Deveses - Casa Moya",
+      fr: "Location appartement vue mer Denia | Plage Les Deveses - Casa Moya"
     },
     metaDescription: {
       nl: "Appartement met zeezicht huren in Denia, 90 meter van het rustige strand Les Deveses. Gratis parkeren, ideaal voor gezinnen. Boek rechtstreeks bij Casa Moya, zonder commissie.",
       en: "Rent a sea-view apartment in Denia, 90 metres from the quiet Les Deveses beach. Free parking, great for families. Book direct with Casa Moya, no commission.",
       es: "Alquila un apartamento con vistas al mar en Denia, a 90 metros de la tranquila playa de Les Deveses. Aparcamiento gratuito, ideal para familias. Reserva directa con Casa Moya, sin comisión.",
       it: "Affitta un appartamento vista mare a Denia, a 90 metri dalla tranquilla spiaggia di Les Deveses. Parcheggio gratuito, ideale per famiglie. Prenota diretto con Casa Moya, senza commissioni.",
-      de: "Mieten Sie eine Wohnung mit Meerblick in Denia, 90 Meter vom ruhigen Strand Les Deveses entfernt. Kostenlose Parkplätze, ideal für Familien. Direkt bei Casa Moya buchen, ohne Provision."
+      de: "Mieten Sie eine Wohnung mit Meerblick in Denia, 90 Meter vom ruhigen Strand Les Deveses entfernt. Kostenlose Parkplätze, ideal für Familien. Direkt bei Casa Moya buchen, ohne Provision.",
+      fr: "Louez un appartement avec vue sur mer à Denia, à 90 mètres de la plage tranquille de Les Deveses. Parking gratuit, idéal pour les familles. Réservez directement chez Casa Moya, sans commission."
     },
     intro: {
       nl: "Les Deveses is het rustigste strand van Denia - fijn zand, kalm water en volop ruimte, zonder de drukte van de stadsstranden. Casa Moya Seaview Apartment Denia ligt op 90 meter van dit strand, met eigen terras en balkon met zeezicht.",
       en: "Les Deveses is Denia's quietest beach - fine sand, calm water and plenty of space, without the crowds of the city beaches. Casa Moya Seaview Apartment Denia is 90 metres from this beach, with its own terrace and sea-view balcony.",
       es: "Les Deveses es la playa más tranquila de Denia - arena fina, aguas calmas y mucho espacio, sin las aglomeraciones de las playas de la ciudad. Casa Moya Seaview Apartment Denia está a 90 metros de esta playa, con terraza propia y balcón con vistas al mar.",
       it: "Les Deveses è la spiaggia più tranquilla di Denia - sabbia fine, acque calme e molto spazio, senza la folla delle spiagge cittadine. Casa Moya Seaview Apartment Denia si trova a 90 metri da questa spiaggia, con terrazza propria e balcone vista mare.",
-      de: "Les Deveses ist der ruhigste Strand von Denia - feiner Sand, ruhiges Wasser und viel Platz, ohne den Trubel der Stadtstrände. Casa Moya Seaview Apartment Denia liegt 90 Meter von diesem Strand entfernt, mit eigener Terrasse und Balkon mit Meerblick."
+      de: "Les Deveses ist der ruhigste Strand von Denia - feiner Sand, ruhiges Wasser und viel Platz, ohne den Trubel der Stadtstrände. Casa Moya Seaview Apartment Denia liegt 90 Meter von diesem Strand entfernt, mit eigener Terrasse und Balkon mit Meerblick.",
+      fr: "Les Deveses est la plage la plus tranquille de Denia - sable fin, eaux calmes et beaucoup d'espace, sans l'affluence des plages du centre-ville. Casa Moya Seaview Apartment Denia se trouve à 90 mètres de cette plage, avec sa propre terrasse et un balcon avec vue sur mer."
     },
     sections: {
       nl: [
@@ -317,6 +351,24 @@ export const areaGuides: AreaGuide[] = [
           heading: "Warum direkt bei Casa Moya buchen",
           body: "Keine Provision für Airbnb oder Booking.com, persönlicher Kontakt mit dem Eigentümer, und immer der beste Direktpreis für dieselbe Wohnung."
         }
+      ],
+      fr: [
+        {
+          heading: "Emplacement et déplacements",
+          body: "Les Deveses se trouve à environ 10 km du centre de Denia, dans le quartier calme au nord de la ville. Il y a du stationnement gratuit dans les rues autour de la plage, et en été un bus relie le centre de Denia à Les Deveses."
+        },
+        {
+          heading: "Idéal pour les familles",
+          body: "La plage a des eaux calmes et peu profondes, des passerelles en bois, un poste de premiers secours de la Croix-Rouge et une surveillance - idéale pour les familles avec de jeunes enfants. Une école de surf se trouve en outre juste sous l'appartement, idéale pour les enfants un peu plus grands."
+        },
+        {
+          heading: "Meilleure période pour réserver",
+          body: "Comme Moraira, Denia bénéficie elle aussi d'un microclimat propre avec environ 300 jours de soleil par an - il y fait donc agréable presque toute l'année, ce qui en fait toujours un bon moment pour réserver. Juillet et août restent les mois les plus populaires ; pour une plage plus calme avec un temps encore chaud, juin et septembre sont de bons choix, réservez donc bien à l'avance pour la haute saison."
+        },
+        {
+          heading: "Pourquoi réserver directement avec Casa Moya",
+          body: "Aucune commission pour Airbnb ou Booking.com, contact personnel avec le propriétaire, et toujours le meilleur tarif direct pour le même appartement."
+        }
       ]
     },
     faq: {
@@ -349,6 +401,12 @@ export const areaGuides: AreaGuide[] = [
         { q: "Gibt es Parkplätze bei der Wohnung?", a: "Ja - kostenlose Parkplätze auf dem eigenen Grundstück sowie viele kostenlose Straßenparkplätze rund um den Strand." },
         { q: "Ist Les Deveses gut für Kinder geeignet?", a: "Ja - ruhiges Wasser, Aufsicht am Strand und eine Surfschule direkt unter der Wohnung machen ihn zu einem der familienfreundlichsten Strände Denias." },
         { q: "Wie weit ist das Zentrum von Denia entfernt?", a: "Etwa 10 km; im Sommer verbindet ein Bus Les Deveses mit dem Zentrum." }
+      ],
+      fr: [
+        { q: "À quelle distance se trouve la plage depuis l'appartement ?", a: "La plage de Les Deveses est à 90 mètres, littéralement au coin de la rue." },
+        { q: "Y a-t-il un parking à l'appartement ?", a: "Oui - parking gratuit sur place, ainsi que de nombreuses places gratuites dans la rue autour de la plage." },
+        { q: "Les Deveses convient-elle aux enfants ?", a: "Oui - des eaux calmes, une surveillance sur la plage et une école de surf sous l'appartement en font l'une des plages les plus adaptées aux familles de Denia." },
+        { q: "À quelle distance se trouve le centre de Denia ?", a: "Environ 10 km ; en été un bus relie Les Deveses au centre." }
       ]
     }
   }

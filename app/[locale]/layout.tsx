@@ -3,7 +3,14 @@ import Footer from "@/components/Footer";
 import type { Locale } from "@/lib/properties";
 
 export function generateStaticParams() {
-  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }, { locale: "de" }];
+  return [
+    { locale: "nl" },
+    { locale: "en" },
+    { locale: "es" },
+    { locale: "it" },
+    { locale: "de" },
+    { locale: "fr" }
+  ];
 }
 
 // Without this, Next.js tries to render this segment for ANY path value

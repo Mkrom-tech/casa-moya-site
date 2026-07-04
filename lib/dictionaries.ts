@@ -455,6 +455,97 @@ export const dictionaries = {
       guideDenia: "Wohnung mit Meerblick mieten in Denia",
       guideDeniaDesc: "90 Meter vom Strand Les Deveses entfernt."
     }
+  },
+  fr: {
+    siteName: "Casa Moya",
+    nav: { properties: "Nos maisons", contact: "Contact" },
+    home: {
+      title: "Maisons de vacances avec vue sur mer sur la Costa Blanca, réservation directe et sans commission",
+      subtitle:
+        "Réservez directement chez nous : aucune commission pour Airbnb ou Booking.com, et toujours notre meilleur tarif direct.",
+      cta: "Vérifier la disponibilité",
+      metaTitle: "Maisons de vacances vue mer à Moraira et Denia | Réservation directe, sans commission",
+      metaDescription:
+        "Casa Moya Villa Moraira (villa avec piscine privée et vue sur mer) et Casa Moya Seaview Apartment Denia (appartement près de la plage de Les Deveses), Costa Blanca. Réservez directement auprès du propriétaire : meilleur prix garanti, sans frais de réservation."
+    },
+    property: {
+      guests: "voyageurs",
+      bedrooms: "chambres",
+      bathrooms: "salles de bain",
+      perNight: "par nuit",
+      avgPriceNote: "(moyenne)",
+      amenitiesTitle: "Équipements",
+      galleryTitle: "Photos",
+      reviewsTitle: "Ce que disent les voyageurs",
+      reviewsSource: "Noté sur",
+      availabilityTitle: "Disponibilité",
+      inquiryTitle: "Demande de réservation",
+      backToOverview: "Retour à l'aperçu",
+      loadingAvailability: "Chargement de la disponibilité…",
+      notConnected:
+        "Connectez ici les calendriers Airbnb et Booking.com (iCal) afin que les voyageurs voient toujours la disponibilité réelle et qu'aucune double réservation ne soit possible.",
+      calendarError: "Impossible de charger le calendrier pour le moment. Réessayez plus tard.",
+      available: "Disponible",
+      booked: "Occupé"
+    },
+    form: {
+      name: "Nom",
+      email: "Adresse e-mail",
+      checkin: "Arrivée",
+      checkout: "Départ",
+      guests: "Nombre de voyageurs",
+      message: "Message (facultatif)",
+      submit: "Envoyer la demande",
+      success:
+        "Merci ! Votre demande a été envoyée. Nous vous répondrons sous 24 heures.",
+      note: "Ceci est une demande, pas une réservation confirmée. Vous recevrez une confirmation personnelle de notre part.",
+      error: "Une erreur s'est produite, veuillez réessayer plus tard ou nous écrire directement."
+    },
+    register: {
+      pageTitle: "Enregistrement des voyageurs",
+      pageSubtitle: "Obligatoire pour tous les voyageurs, sauf les enfants de moins de 12 ans.",
+      propertyLabel: "Logement",
+      name: "Nom complet",
+      email: "Adresse e-mail",
+      phone: "Numéro de téléphone",
+      dob: "Date de naissance",
+      passportNumber: "Numéro de passeport",
+      passportExpiry: "Date d'expiration du passeport",
+      passportCopyLabel: "Copie du passeport",
+      passportCopyHint: "Max. 2 fichiers, 4 Mo au total",
+      signatureLabel: "Signature",
+      signatureHint: "Dessinez avec votre souris ou votre doigt",
+      signatureClear: "Effacer la signature",
+      signatureRequired: "Veuillez signer avant d'envoyer.",
+      submit: "Envoyer l'enregistrement",
+      success: "Merci ! Votre enregistrement a bien été reçu.",
+      error: "Une erreur s'est produite, veuillez réessayer ou nous contacter.",
+      sizeError: "Les fichiers sont trop volumineux ensemble (max. 4 Mo). Utilisez des photos plus petites ou moins de fichiers."
+    },
+    footer: {
+      rights: "Tous droits réservés.",
+      registerLink: "Enregistrement des voyageurs"
+    },
+    areaGuide: {
+      faqTitle: "Questions fréquentes",
+      ctaTitle: "Découvrez Casa Moya et vérifiez la disponibilité",
+      moreGuides: "En savoir plus sur la région"
+    },
+    homeExtra: {
+      whyTitle: "Pourquoi réserver directement avec Casa Moya",
+      why1Title: "Aucune commission",
+      why1Body: "Pas de majoration d'Airbnb ou de Booking.com : vous payez toujours notre meilleur prix direct.",
+      why2Title: "Contact personnel",
+      why2Body: "Contact direct avec le propriétaire, avant, pendant et après votre séjour.",
+      why3Title: "Disponibilité toujours à jour",
+      why3Body: "Notre calendrier est synchronisé avec Airbnb et Booking.com, donc aucune double réservation.",
+      guidesTitle: "À la recherche de la maison de vacances idéale ?",
+      guidesSubtitle: "Informations pratiques sur Moraira et Denia pour vous aider à choisir.",
+      guideMoraira: "Location de villa à Moraira",
+      guideMorairaDesc: "Piscine privée, vue sur mer, à 2,1 km de la plage.",
+      guideDenia: "Appartement vue mer en location à Denia",
+      guideDeniaDesc: "À 90 mètres de la plage de Les Deveses."
+    }
   }
 } satisfies Record<Locale, unknown>;
 

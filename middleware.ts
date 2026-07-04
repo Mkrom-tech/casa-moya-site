@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 // Keep in sync with the Locale type in lib/properties.ts.
-const SUPPORTED_LOCALES = ["nl", "en", "es", "it", "de"] as const;
+const SUPPORTED_LOCALES = ["nl", "en", "es", "it", "de", "fr"] as const;
 const DEFAULT_LOCALE = "en";
 
 // Parses an Accept-Language header like "en-US,en;q=0.9,nl;q=0.8" into an

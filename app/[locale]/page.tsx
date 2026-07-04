@@ -8,8 +8,24 @@ import { getPropertyReviews } from "@/lib/testimonials";
 import PropertyCard from "@/components/PropertyCard";
 
 export function generateStaticParams() {
-  return [{ locale: "nl" }, { locale: "en" }, { locale: "es" }, { locale: "it" }, { locale: "de" }];
+  return [
+    { locale: "nl" },
+    { locale: "en" },
+    { locale: "es" },
+    { locale: "it" },
+    { locale: "de" },
+    { locale: "fr" }
+  ];
 }
+
+const OG_LOCALES: Record<Locale, string> = {
+  nl: "nl_NL",
+  en: "en_US",
+  es: "es_ES",
+  it: "it_IT",
+  de: "de_DE",
+  fr: "fr_FR"
+};
 
 export function generateMetadata({
   params
@@ -22,14 +38,14 @@ export function generateMetadata({
     description: dict.home.metaDescription,
     alternates: {
       canonical: `/${params.locale}`,
-      languages: { nl: "/nl", en: "/en", es: "/es", it: "/it", de: "/de" }
+      languages: { nl: "/nl", en: "/en", es: "/es", it: "/it", de: "/de", fr: "/fr" }
     },
     openGraph: {
       title: dict.home.metaTitle,
       description: dict.home.metaDescription,
       url: `/${params.locale}`,
       images: ["/images/moraira-1.jpg"],
-      locale: params.locale === "nl" ? "nl_NL" : "en_US"
+      locale: OG_LOCALES[params.locale]
     }
   };
 }

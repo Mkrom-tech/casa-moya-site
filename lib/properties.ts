@@ -1,4 +1,4 @@
-export type Locale = "nl" | "en" | "es" | "it" | "de";
+export type Locale = "nl" | "en" | "es" | "it" | "de" | "fr";
 
 export interface Property {
   slug: string;
@@ -86,6 +86,17 @@ export const properties: Property[] = [
         "Waschmaschine",
         "Geschirrspüler",
         "Satelliten-TV"
+      ],
+      fr: [
+        "Piscine privée",
+        "Vue sur mer",
+        "Jardin",
+        "Balcon",
+        "Climatisation",
+        "Wifi",
+        "Lave-linge",
+        "Lave-vaisselle",
+        "TV satellite"
       ]
     },
     description: {
@@ -93,21 +104,24 @@ export const properties: Property[] = [
       en: "Seaview villa in Moraira with a private pool, garden, and a sea-view balcony. Light, spacious and quietly located, 3.2 km from the centre and 2.1 km from the beach.",
       es: "Villa con vistas al mar en Moraira, con piscina privada, jardín y balcón con vistas al mar. Luminosa, espaciosa y tranquila, a 3,2 km del centro y a 2,1 km de la playa.",
       it: "Villa vista mare a Moraira con piscina privata, giardino e balcone con vista sul mare. Luminosa, spaziosa e tranquilla, a 3,2 km dal centro e a 2,1 km dalla spiaggia.",
-      de: "Villa mit Meerblick in Moraira mit privatem Pool, Garten und Balkon mit Meerblick. Hell, geräumig und ruhig gelegen, 3,2 km vom Zentrum und 2,1 km vom Strand entfernt."
+      de: "Villa mit Meerblick in Moraira mit privatem Pool, Garten und Balkon mit Meerblick. Hell, geräumig und ruhig gelegen, 3,2 km vom Zentrum und 2,1 km vom Strand entfernt.",
+      fr: "Villa avec vue sur mer à Moraira, avec piscine privée, jardin et balcon avec vue sur mer. Lumineuse, spacieuse et calme, à 3,2 km du centre et 2,1 km de la plage."
     },
     metaTitle: {
       nl: "Villa met privézwembad en zeezicht huren in Moraira",
       en: "Villa with Private Pool & Sea View for Rent in Moraira",
       es: "Villa con piscina privada y vistas al mar en alquiler en Moraira",
       it: "Villa con piscina privata e vista mare in affitto a Moraira",
-      de: "Villa mit Privatpool und Meerblick zur Miete in Moraira"
+      de: "Villa mit Privatpool und Meerblick zur Miete in Moraira",
+      fr: "Villa avec piscine privée et vue sur mer à louer à Moraira"
     },
     metaDescription: {
       nl: "Vakantievilla in Moraira/Teulada met privézwembad, tuin en zeezicht. 4 gasten, 2 slaapkamers, 2,1 km van het strand. Boek rechtstreeks bij de eigenaar, geen commissie of boekingskosten.",
       en: "Vacation villa in Moraira/Teulada with private pool, garden and sea views. Sleeps 4, 2 bedrooms, 2.1 km from the beach. Book direct with the owner, no commission, no booking fees.",
       es: "Villa de vacaciones en Moraira/Teulada con piscina privada, jardín y vistas al mar. 4 huéspedes, 2 dormitorios, a 2,1 km de la playa. Reserva directamente con el propietario, sin comisiones ni gastos de reserva.",
       it: "Villa vacanze a Moraira/Teulada con piscina privata, giardino e vista mare. 4 ospiti, 2 camere da letto, a 2,1 km dalla spiaggia. Prenota direttamente con il proprietario, senza commissioni né spese di prenotazione.",
-      de: "Ferienvilla in Moraira/Teulada mit privatem Pool, Garten und Meerblick. 4 Gäste, 2 Schlafzimmer, 2,1 km vom Strand entfernt. Direkt beim Eigentümer buchen, keine Provision, keine Buchungsgebühren."
+      de: "Ferienvilla in Moraira/Teulada mit privatem Pool, Garten und Meerblick. 4 Gäste, 2 Schlafzimmer, 2,1 km vom Strand entfernt. Direkt beim Eigentümer buchen, keine Provision, keine Buchungsgebühren.",
+      fr: "Villa de vacances à Moraira/Teulada avec piscine privée, jardin et vue sur mer. 4 voyageurs, 2 chambres, à 2,1 km de la plage. Réservez directement auprès du propriétaire, sans commission ni frais de réservation."
     },
     icalUrls: [
       "https://ical.booking.com/v1/export?t=29a54afe-d090-4eec-8193-755dd760fa8c",
@@ -169,6 +183,15 @@ export const properties: Property[] = [
         "Kostenlose Parkplätze",
         "Wifi",
         "Fahrradstellplatz"
+      ],
+      fr: [
+        "À deux pas de la plage (90 m)",
+        "Vue sur mer",
+        "Terrasse",
+        "Balcon",
+        "Parking gratuit",
+        "Wifi",
+        "Parking à vélos"
       ]
     },
     description: {
@@ -176,21 +199,24 @@ export const properties: Property[] = [
       en: "Sea-view apartment in Denia, just 90 metres from Les Deveses beach. Terrace and balcony with sea views, free on-site parking.",
       es: "Apartamento con vistas al mar en Denia, a solo 90 metros de la playa de Les Deveses. Terraza y balcón con vistas al mar, aparcamiento gratuito en la propiedad.",
       it: "Appartamento vista mare a Denia, a soli 90 metri dalla spiaggia di Les Deveses. Terrazza e balcone con vista mare, parcheggio gratuito in loco.",
-      de: "Wohnung mit Meerblick in Denia, nur 90 Meter vom Strand von Les Deveses entfernt. Terrasse und Balkon mit Meerblick, kostenlose Parkplätze auf dem Grundstück."
+      de: "Wohnung mit Meerblick in Denia, nur 90 Meter vom Strand von Les Deveses entfernt. Terrasse und Balkon mit Meerblick, kostenlose Parkplätze auf dem Grundstück.",
+      fr: "Appartement avec vue sur mer à Denia, à seulement 90 mètres de la plage de Les Deveses. Terrasse et balcon avec vue sur mer, parking gratuit sur place."
     },
     metaTitle: {
       nl: "Appartement huren bij strand Les Deveses, Denia",
       en: "Apartment for Rent near Les Deveses Beach, Denia",
       es: "Apartamento en alquiler cerca de la playa de Les Deveses, Denia",
       it: "Appartamento in affitto vicino alla spiaggia di Les Deveses, Denia",
-      de: "Wohnung nahe Strand Les Deveses zur Miete in Denia"
+      de: "Wohnung nahe Strand Les Deveses zur Miete in Denia",
+      fr: "Appartement à louer près de la plage Les Deveses, Denia"
     },
     metaDescription: {
       nl: "Appartement met zeezicht in Denia, 90 meter van het strand van Les Deveses. 4 gasten, 2 slaapkamers, gratis parkeren. Boek rechtstreeks bij de eigenaar, geen commissie.",
       en: "Sea-view apartment in Denia, just 90 metres from Les Deveses beach. Sleeps 4, 2 bedrooms, free parking. Book direct with the owner, no commission.",
       es: "Apartamento con vistas al mar en Denia, a 90 metros de la playa de Les Deveses. 4 huéspedes, 2 dormitorios, aparcamiento gratuito. Reserva directamente con el propietario, sin comisiones.",
       it: "Appartamento vista mare a Denia, a 90 metri dalla spiaggia di Les Deveses. 4 ospiti, 2 camere da letto, parcheggio gratuito. Prenota direttamente con il proprietario, senza commissioni.",
-      de: "Wohnung mit Meerblick in Denia, 90 Meter vom Strand von Les Deveses entfernt. 4 Gäste, 2 Schlafzimmer, kostenlose Parkplätze. Direkt beim Eigentümer buchen, keine Provision."
+      de: "Wohnung mit Meerblick in Denia, 90 Meter vom Strand von Les Deveses entfernt. 4 Gäste, 2 Schlafzimmer, kostenlose Parkplätze. Direkt beim Eigentümer buchen, keine Provision.",
+      fr: "Appartement avec vue sur mer à Denia, à 90 mètres de la plage de Les Deveses. 4 voyageurs, 2 chambres, parking gratuit. Réservez directement auprès du propriétaire, sans commission."
     },
     icalUrls: [
       "https://www.airbnb.com/calendar/ical/1118123648822104746.ics?t=3c0a0aad03e04920a23280f11f34a279",

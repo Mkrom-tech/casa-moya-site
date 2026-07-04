@@ -8,7 +8,16 @@ import { getDictionary } from "@/lib/dictionaries";
 import { areaGuides, getAreaGuideByLocaleSlug, getAreaGuideHref } from "@/lib/areaGuides";
 import { LogoMark } from "@/components/Logo";
 
-const LOCALES: Locale[] = ["nl", "en", "es", "it", "de"];
+const LOCALES: Locale[] = ["nl", "en", "es", "it", "de", "fr"];
+
+const OG_LOCALES: Record<Locale, string> = {
+  nl: "nl_NL",
+  en: "en_US",
+  es: "es_ES",
+  it: "it_IT",
+  de: "de_DE",
+  fr: "fr_FR"
+};
 
 export function generateStaticParams() {
   return areaGuides.flatMap((guide) =>
@@ -43,7 +52,7 @@ export function generateMetadata({
       description,
       url: getAreaGuideHref(params.locale, guide),
       images: [guide.heroImage],
-      locale: params.locale === "nl" ? "nl_NL" : "en_US"
+      locale: OG_LOCALES[params.locale]
     }
   };
 }
