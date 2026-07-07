@@ -49,7 +49,10 @@ function parseIcs(text: string): BusyRange[] {
 export async function getBusyRanges(urls: string[]): Promise<BusyRange[]> {
   const results = await Promise.allSettled(
     urls.map(async (url) => {
-      const res = await fetch(url, { next: { revalidate: 3600 } });
+      // Cache each calendar fetch for 15 minutes rather than a full hour,
+      // so a fresh booking or block shows up on the site much sooner
+      // without hammering Airbnb/Booking.com's iCal endpoint on every visit.
+      const res = await fetch(url, { next: { revalidate: 900 } });
       if (!res.ok) throw new Error(`iCal fetch failed: ${res.status}`);
       const text = await res.text();
       return parseIcs(text);
